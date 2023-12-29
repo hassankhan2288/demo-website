@@ -8,14 +8,14 @@
     <input type="hidden" id="env_variable" value="{{ $env }}" />
     <input type="hidden" id="env_url" value="{{ $url }}" />
     <input type="hidden" id="user_id" value="{{ $user->ms_number }}" />
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Checkout</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Checkout</li>
 						</ol>
 					</nav>
 				</div>
@@ -54,7 +54,7 @@
 
                                 <div class="lg:col-span-6 md:col-span-6">
                                     <label>Email Address<span>*</span></label>
-                                    <input type="email" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="email" required placeholder="" value="{{isset($user->email) ? $user->email : ''}}">
+                                    <input type="email" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="email" required placeholder="" value="{{isset($user->email) ? $user->email : ''}}">
 
                                     @error('email')
                                         <span class='text-red'>{{$message}}</span>
@@ -62,14 +62,14 @@
                                 </div>
                                 <div class="lg:col-span-6 md:col-span-6">
                                     <label>Phone Number <span>*</span></label>
-                                    <input type="number" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="phone" required placeholder=""  value="{{isset($user->phone_number) ? $user->phone_number : ''}}">
+                                    <input type="number" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="phone" required placeholder=""  value="{{isset($user->phone_number) ? $user->phone_number : ''}}">
                                     @error('phone')
                                         <span class='text-red'>{{$message}}</span>
                                     @enderror
                                 </div>
                                 <div class="lg:col-span-6 md:col-span-6">
                                     <label>Country<span>*</span></label>
-                                    <select name="country" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="country" required>
+                                    <select name="country" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="country" required>
                  
                                         <option value="Uk" selected>United Kingdom</option>
                                      
@@ -77,14 +77,14 @@
                                 </div>
                                 {{-- <div class="lg:col-span-6 md:col-span-6">
                                     <label>Address Line 2</label>
-                                    <input type="text" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2" placeholder="" value="{{old('address2')}}">
+                                    <input type="text" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2" placeholder="" value="{{old('address2')}}">
                                     @error('address2')
                                     <span class='text-red'>{{$message}}</span>
                                     @enderror
                                 </div> --}}
                                 <div class="lg:col-span-6 md:col-span-6">
                                     <label>Postal Code</label>
-                                    <input type="text" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="post_code" required placeholder="" value="{{isset($user->postal_code) ? $user->postal_code : ''}}">
+                                    <input type="text" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="post_code" required placeholder="" value="{{isset($user->postal_code) ? $user->postal_code : ''}}">
                                     @error('post_code')
                                         <span class='text-red'>{{$message}}</span>
                                     @enderror
@@ -101,16 +101,16 @@
                                             $shippingadd = $user->address_2;
                                         }
                                             @endphp
-                                    <textarea class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2"  placeholder="" required>{{$shippingadd}}</textarea>
-                                    {{-- <input type="text" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2" placeholder="" value="{{isset($user->address_2) ? $user->address_2 : ''}}"> --}}
+                                    <textarea class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2"  placeholder="" required>{{$shippingadd}}</textarea>
+                                    {{-- <input type="text" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address2" placeholder="" value="{{isset($user->address_2) ? $user->address_2 : ''}}"> --}}
                                     @error('address1')
                                         <span class='text-red'>{{$message}}</span>
                                     @enderror
                                 </div>
                                 <div class="lg:col-span-6 md:col-span-6 insert_after_here">
                                     <label>Billing Address<span>*</span></label>
-                                    <textarea id="billingaddress" maxlength="50" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address1" required  placeholder="">{{isset($user->address) ? $user->address : ''}}</textarea>
-                                    {{-- <input type="text" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address1" placeholder="" value="{{isset($user->address) ? $user->address : ''}}"> --}}
+                                    <textarea id="billingaddress" maxlength="50" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address1" required  placeholder="">{{isset($user->address) ? $user->address : ''}}</textarea>
+                                    {{-- <input type="text" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" name="address1" placeholder="" value="{{isset($user->address) ? $user->address : ''}}"> --}}
                                     @error('address1')
                                         <span class='text-red'>{{$message}}</span>
                                     @enderror
@@ -119,7 +119,7 @@
                                 <div class="lg:col-span-6 md:col-span-6 red_border_shine">
                                     <label>Shipping Address 2<span>*</span></label>
                                     <label id="delete_dom">x</label>
-                                    <textarea  maxlength="50" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px] disabled newAddress" name="address3" id="dynamic_textarea" placeholder="" readonly="">{{isset($user->address_3) ? $user->address_3 : ''}}</textarea>
+                                    <textarea  maxlength="50" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px] disabled newAddress" name="address3" id="dynamic_textarea" placeholder="" readonly="">{{isset($user->address_3) ? $user->address_3 : ''}}</textarea>
                                 </div>
                                 @endif
 
@@ -129,13 +129,13 @@
                             </div>
                             <input type="hidden" name="warehouse_id" id="warehouse_id" value="{{ $warehouse_id }}"/>
 
-                            <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold mt-6 " id="proceed_to_checkout">Proceed To checkout</button>
+                            <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold mt-6 " id="proceed_to_checkout">Proceed To checkout</button>
 
                             <!--/ End Form -->
                         </div>
                     </div>
                     <div class="lg:col-span-4 ">
-                        <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[20px]">
+                        <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[20px]">
                             @php
                                 $total_amount=Helper::totalCartPrice();
                                $vat= Helper::totalCartVatPrice();
@@ -146,22 +146,22 @@
                             <div class="flex flex-col gap-3">
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] delivery_option" for="cod">
                                     <input name="payment_method" id="cod" class="absolute opacity-0 z-[0] peer" type="radio" value="cod" required />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Delivery (Total: £{{ $amount_on_delivery }})
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] selfpickup_option" for="self">
                                     <input name="payment_method" id="self" class="absolute opacity-0 z-[0] peer" type="radio" value="self" checked="checked" />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Self Pick (Total: £{{ $total_amount }})
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] delivery_option" for="cod">
                                     <input name="payment_method" id="cod" class="absolute opacity-0 z-[0] peer" type="radio" value="cod" required />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Delivery
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] selfpickup_option" for="self">
                                     <input name="payment_method" id="self" class="absolute opacity-0 z-[0] peer" type="radio" value="self" checked="checked" />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Self Pick
                                 </label>
                             </div> --}}
@@ -217,12 +217,12 @@
                                     @endif
                                 </ul>
                             </div>
-                            <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6 " id="proceed_to_checkout">Proceed To checkout</button>
+                            <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6 " id="proceed_to_checkout">Proceed To checkout</button>
                             <!--/ End Order Widget -->
                             {{-- @if ($total_amount <= 249 && $warehouse_id == 7)
-                                <button class="bg-[#ce121275] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold  mt-6" disabled>Proceed To Payment</button>
+                                <button class="bg-[#70623375] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold  mt-6" disabled>Proceed To Payment</button>
                            @else
-                                <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6 " id="proceed_to_checkout">Proceed To Payment</button>
+                                <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6 " id="proceed_to_checkout">Proceed To Payment</button>
                                
                             @endif 
                             --}}
@@ -274,17 +274,17 @@
         <div class="modal-content">
             <div class="modal-header">
             <h1 class="modal-title fs-5" id="new_address_modalLabel">Shipping Address 2</h1>
-            <button type="button" class="btn-close bg-[#ce1212] text-white" data-bs-dismiss="modal" aria-label="Close">
+            <button type="button" class="btn-close bg-[#706233] text-white" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
             </div>
             <div class="modal-footer">
-            <button id="change_shipping" type="button" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
+            <button id="change_shipping" type="button" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
             </div>
         </div>
         </div>

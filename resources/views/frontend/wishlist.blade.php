@@ -3,14 +3,14 @@
 @section('main-content')
 <main>
 	<!-- Breadcrumbs -->
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Wishlist</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Wishlist</li>
 						</ol>
 					</nav>
 				</div>
@@ -43,7 +43,7 @@
 					<!-- Shopping Summery -->
 					<table class="table shopping-summery wishlistsetting">
 						<thead>
-							<tr class="bg-[#ce1212]/10">
+							<tr class="bg-[#706233]/10">
 								<th class="p-[0.5rem] text-[14px]">PRODUCT</th>
 								<th class="p-[0.5rem] text-[14px]">NAME</th>
 								{{-- <th class="p-[0.5rem] text-[14px]">Preference</th> --}}
@@ -89,7 +89,7 @@
 										<td class="text-center !p-[1rem] align-middle text-[14px]">
 											<div class="qty-input">
 												<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-												<input class="product-qty" type="number" name="quant[1]" data-product="{{ $product->id }}"  class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="1" max="10" data-min="1" data-max="10" value="1">
+												<input class="product-qty" type="number" name="quant[1]" data-product="{{ $product->id }}"  class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="1" max="10" data-min="1" data-max="10" value="1">
 												<button class="qty-count " data-action="add" type="button">+</button>
 											</div>
 										</td>
@@ -98,16 +98,16 @@
 												@if (Helper::checkWarehouseOfProduct($product->id,\Auth::guard('customer')->user()->warehouse))
 
 													@if ($product->delivery_single > 0 && $product->delivery_case <= 0 )
-														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE&quantity=1" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block pd-{{ $product->id }}" >Add to Cart</a>
+														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE&quantity=1" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block pd-{{ $product->id }}" >Add to Cart</a>
 													@elseif($product->delivery_single <= 0 && $product->delivery_case > 0)
-														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE&quantity=1" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
+														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE&quantity=1" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
 													@else
-														<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a>
+														<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a>
 													@endif
 
 												@else
 
-													<a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a>
+													<a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a>
 
 												@endif
 
@@ -116,27 +116,27 @@
 
 
 													@if ($product->p_price > 0 && $product->price <= 0 )
-														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE&quantity=1" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
+														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE&quantity=1" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
 													@elseif($product->p_price <= 0 && $product->price > 0)
-														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE&quantity=1" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
+														<a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE&quantity=1" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block  pd-{{ $product->id }}" >Add to Cart</a>
 													@else
-														<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a>
+														<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a>
 													@endif
 
 
 												@else
 
-													<a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a>
+													<a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a>
 
 												@endif
 											@else
-												<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a>
+												<a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a>
 											@endif
 											<!--THIS IS OLD-->
 											{{-- @if($wishlist['amount'] > 0)
-												<a href="{{route('add-to-cart',$wishlist->product['slug'])}}?preference={{$wishlist->preference}}&pack_size={{$wishlist->type}}" class='bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block'>Add To Cart</a>
+												<a href="{{route('add-to-cart',$wishlist->product['slug'])}}?preference={{$wishlist->preference}}&pack_size={{$wishlist->type}}" class='bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block'>Add To Cart</a>
 											@else
-											<a href="javascript:void(0)" class='bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block disabled:opacity-70'>Amount not set</a>
+											<a href="javascript:void(0)" class='bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block disabled:opacity-70'>Amount not set</a>
 											@endif --}}
 											
 										</td>
@@ -164,7 +164,7 @@
 	<!--/ End Shopping Cart -->
 
 	<!-- Start Shop Services Area  -->
-	{{-- <section class="py-[40px] bg-[#ce1212]/10 mb-[24px]">
+	{{-- <section class="py-[40px] bg-[#706233]/10 mb-[24px]">
 		<div class="!container px-6 mx-auto">
 			<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5">
 				<div>

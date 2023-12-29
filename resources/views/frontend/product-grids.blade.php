@@ -17,14 +17,14 @@ session()->get('design');
 @section('main-content')
     <main class="pb-[24px]">
         <!-- Breadcrumbs -->
-        <div class="w-full bg-[#ce1212]/10 py-[15px]">
+        <div class="w-full bg-[#706233]/10 py-[15px]">
             <div class="!container px-6 mx-auto">
                 <div class="flex flex-wrap items-center justify-between gap-3">
                     <div class="flex flex-wrap">
                         <nav>
                             <ol class="flex items-center bread-crumbsetting">
                                 <li class="list-unstyled"><a href="{{ route('home') }}">Home </a></li>
-                                <li class="list-unstyled text-[#ce1212] ml-1" aria-current="page">
+                                <li class="list-unstyled text-[#706233] ml-1" aria-current="page">
                                     @php
                                         if (isset($value->id)) {
                                             $parent = $value->getParentCategory($value->id);
@@ -83,11 +83,11 @@ session()->get('design');
             <div class="!container mx-auto px-6">
                 <div class="grid lg:grid-cols-12 grid-cols-1 gap-4">
                     <button type="button"
-                        class="btn sm:flex items-center gap-3 text-[#ce1212] text-[14px] lg:hidden hidden active:!outline-0 active:!border-none !border-none !outline-0"
+                        class="btn sm:flex items-center gap-3 text-[#706233] text-[14px] lg:hidden hidden active:!outline-0 active:!border-none !border-none !outline-0"
                         data-bs-toggle="modal" data-bs-target="#mobile-category">
                         <span
-                            class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                            <i class="fa fa-bars text-[18px] text-[#ce1212]" aria-hidden="true"></i>
+                            class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                            <i class="fa fa-bars text-[18px] text-[#706233]" aria-hidden="true"></i>
                         </span>
                         Show Sidebar
                     </button>
@@ -96,11 +96,11 @@ session()->get('design');
                             name="product-cat" />
                     @endif
                     <div class="xl:col-span-3 lg:col-span-4 lg:block hidden">
-                        <div class="p-[15px] border border-[#ce1212]/10 rounded-[5px] ">
+                        <div class="p-[15px] border border-[#706233]/10 rounded-[5px] ">
                             <!-- Single Widget -->
                             <div class="single-widget category">
                                 <h3
-                                    class="text-[20px] font-bold mb-[20px] border-b border-[#ce1212]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#ce1212]">
+                                    class="text-[20px] font-bold mb-[20px] border-b border-[#706233]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#706233]">
                                     Categories</h3>
                                 <div class="dropdown">
                                     @php
@@ -132,7 +132,7 @@ session()->get('design');
                                                     @endforeach
                                                 </ul>
                                             @else
-                                                <!-- <a class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
+                                                <!-- <a class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
                                                        id="dropdownMenuLink{{ $cat_info->id }}">
                                                         {{ $cat_info->name }}
                                                     </a> -->
@@ -189,23 +189,23 @@ session()->get('design');
                                         </div>
                                     </div>
                                     <button type="button"
-                                        class="absolute !-bottom-[1px] left-0 btn flex items-center gap-3 text-[#ce1212] text-[14px] sm:hidden active:!outline-0 active:!border-none !border-none !outline-0 !p-0"
+                                        class="absolute !-bottom-[1px] left-0 btn flex items-center gap-3 text-[#706233] text-[14px] sm:hidden active:!outline-0 active:!border-none !border-none !outline-0 !p-0"
                                         data-bs-toggle="modal" data-bs-target="#mobile-category">
                                         <span
-                                            class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                                            <i class="fa fa-bars text-[18px] text-[#ce1212]" aria-hidden="true"></i>
+                                            class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                                            <i class="fa fa-bars text-[18px] text-[#706233]" aria-hidden="true"></i>
                                         </span>
                                         Show Sidebar
                                     </button>
                                     <ul class="flex items-center gap-2 ml-auto">
                                         <li
-                                            class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#ce1212]/10">
+                                            class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#706233]/10">
                                             <a href="{{ URL::to('design', ['id' => 'grid']) }}">
                                                 <i class="fa fa-th-large"></i>
                                             </a>
                                         </li>
                                         <li
-                                            class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#ce1212]">
+                                            class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#706233]">
                                             <a href="{{ URL::to('design', ['id' => 'list']) }}" class="text-white">
                                                 <i class="fa fa-th-list"></i>
                                             </a>
@@ -226,7 +226,7 @@ session()->get('design');
                                 <!-- Start Single List -->
 
                                 <div
-                                    class="p-[15px] rounded-[5px]  !border !border-[#ce1212]/10 hover:!border-[#ce1212] transition duration-300 mb-6">
+                                    class="p-[15px] rounded-[5px]  !border !border-[#706233]/10 hover:!border-[#706233] transition duration-300 mb-6">
                                     <div class="grid sm:grid-cols-12 grid-cols-1 gap-4">
                                         <div class="lg:col-span-4 sm:col-span-6">
                                             <div class="mr-[15px] relative w-full min-h-[150px] group">
@@ -239,7 +239,7 @@ session()->get('design');
                                                     <img class="w-[70%] mx-auto transform group-hover:scale-110 transition duration-300"
                                                         src="{{ image_url('storage/' . $photo[0]) }}" alt="">
                                                     {{-- @if ($product->discount)
-                                                        <span class="absolute p-[2px_8px] text-white bg-[#ce1212] rounded-[5px] top-[1px] left-[1px]">{{$product->discount}} % Off</span>
+                                                        <span class="absolute p-[2px_8px] text-white bg-[#706233] rounded-[5px] top-[1px] left-[1px]">{{$product->discount}} % Off</span>
                                                     @endif --}}
                                                 </a>
                                             </div>
@@ -247,9 +247,9 @@ session()->get('design');
                                         <div class="lg:col-span-8 md:col-span-6 flex items-center">
                                             <div class="text-left faisal">
                                                 <h3
-                                                    class="py-[5px] font-bold sm:text-[16px] text-[13px] text-[#ce1212] height-[45px]">
+                                                    class="py-[5px] font-bold sm:text-[16px] text-[13px] text-[#706233] height-[45px]">
                                                     <a href="{{ route('product-detail', $product->slug) }}"
-                                                        class="hover:text[#ce1212]">{{ $product->name }}</a>
+                                                        class="hover:text[#706233]">{{ $product->name }}</a>
                                                 </h3>
                                                 {{-- <div class="sm:text-[14px] text-[10px] font-medium py-[5px] truncate">Product Code: <strong>{{ $product->ms_id }}</strong></div> --}}
                                                 <div class="sm:text-[14px] text-[10px] font-medium py-[5px] truncate">
@@ -348,45 +348,45 @@ session()->get('design');
                                                             @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse))
                                                                 @if ($product->Fullprice->delivery_single > 0 && $product->Fullprice->delivery_case <= 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @elseif($product->Fullprice->delivery_single <= 0 && $product->Fullprice->delivery_case > 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @else
                                                                     <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                        class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See
+                                                                        class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See
                                                                         Details</a>
                                                                 @endif
                                                             @else
                                                                 <a href="#"
-                                                                    class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out
+                                                                    class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out
                                                                     Of Stock</a>
                                                             @endif
                                                         @elseif (\Auth::guard('customer')->user()->checkout_preference == 'pickup')
                                                             @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse))
                                                                 @if ($product->Fullprice->p_price > 0 && $product->Fullprice->price <= 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @elseif($product->Fullprice->p_price <= 0 && $product->Fullprice->price > 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @else
                                                                     <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                        class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See
+                                                                        class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See
                                                                         Details</a>
                                                                 @endif
                                                             @else
                                                                 <a href="#"
-                                                                    class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out
+                                                                    class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out
                                                                     Of Stock</a>
                                                             @endif
                                                         @else
                                                             <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See
+                                                                class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See
                                                                 Details</a>
                                                         @endif
 
@@ -395,12 +395,12 @@ session()->get('design');
 
 
                                                         <a href="{{ route('wishlist') }}/{{ $product->slug }}"
-                                                            class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                            class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                             <i class="fa fa-heart-o sm:text-[14px] text-[10px]"
                                                                 aria-hidden="true"></i>
                                                         </a>
                                                         <a href="{{ route('product-detail', $product->slug) }}"
-                                                            class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                            class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                             <i class="fa fa-eye  sm:text-[14px] text-[10px]"
                                                                 aria-hidden="true"></i>
                                                         </a>
@@ -450,11 +450,11 @@ session()->get('design');
             <div class="!container mx-auto px-6">
                 <div class="grid lg:grid-cols-12 grid-cols-1 gap-4 relative">
                     <button type="button"
-                        class="btn sm:flex items-center gap-3 text-[#ce1212] text-[14px] lg:hidden hidden active:!outline-0 active:!border-none !border-none !outline-0"
+                        class="btn sm:flex items-center gap-3 text-[#706233] text-[14px] lg:hidden hidden active:!outline-0 active:!border-none !border-none !outline-0"
                         data-bs-toggle="modal" data-bs-target="#mobile-category">
                         <span
-                            class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                            <i class="fa fa-bars text-[18px] text-[#ce1212]" aria-hidden="true"></i>
+                            class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                            <i class="fa fa-bars text-[18px] text-[#706233]" aria-hidden="true"></i>
                         </span>
                         Show Sidebar
                     </button>
@@ -464,9 +464,9 @@ session()->get('design');
                     @endif
                     <input type="hidden" value="true" name="filter" />
                     <div class="xl:col-span-3 lg:col-span-4 lg:block hidden">
-                        <div class="p-[15px] !border !border-[#ce1212]/10 rounded-[5px] ">
+                        <div class="p-[15px] !border !border-[#706233]/10 rounded-[5px] ">
                             <h3
-                                class="text-[20px] font-bold mb-[20px] border-b border-[#ce1212]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#ce1212]">
+                                class="text-[20px] font-bold mb-[20px] border-b border-[#706233]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#706233]">
                                 Categories</h3>
                             <div class="dropdown">
                                 @php
@@ -497,7 +497,7 @@ session()->get('design');
                                                 @endforeach
                                             </ul>
                                         @else
-                                            <!-- <a class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
+                                            <!-- <a class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
                                                     id="dropdownMenuLink{{ $cat_info->id }}">
                                                     {{ $cat_info->name }}
                                                 </a> -->
@@ -562,22 +562,22 @@ session()->get('design');
                                 </div>
                             </div>
                             <button type="button"
-                                class="absolute !-bottom-[1px] left-0 btn flex items-center gap-3 text-[#ce1212] text-[14px] sm:hidden active:!outline-0 active:!border-none !border-none !outline-0 !p-0"
+                                class="absolute !-bottom-[1px] left-0 btn flex items-center gap-3 text-[#706233] text-[14px] sm:hidden active:!outline-0 active:!border-none !border-none !outline-0 !p-0"
                                 data-bs-toggle="modal" data-bs-target="#mobile-category">
                                 <span
-                                    class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                                    <i class="fa fa-bars text-[18px] text-[#ce1212]" aria-hidden="true"></i>
+                                    class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                                    <i class="fa fa-bars text-[18px] text-[#706233]" aria-hidden="true"></i>
                                 </span>
                                 Show Sidebar
                             </button>
                             <ul class="flex items-center gap-2 ml-auto gridlistbox ">
-                                <li class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#ce1212]">
+                                <li class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#706233]">
                                     <a href="{{ URL::to('design', ['id' => 'grid']) }}" class="text-white">
                                         <i class="fa fa-th-large"></i>
                                     </a>
                                 </li>
                                 <li
-                                    class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#ce1212]/10">
+                                    class="w-[43px] h-[32px] flex items-center justify-center rounded-[5px] bg-[#706233]/10">
                                     <a href="{{ URL::to('design', ['id' => 'list']) }}">
                                         <i class="fa fa-th-list"></i>
                                     </a>
@@ -609,7 +609,7 @@ session()->get('design');
                                         @endphp
 
                                         <div
-                                            class="gridcontroll p-[15px] rounded-[5px]  !border !border-[#ce1212]/10 hover:!border-[#ce1212] transition duration-300">
+                                            class="gridcontroll p-[15px] rounded-[5px]  !border !border-[#706233]/10 hover:!border-[#706233] transition duration-300">
                                             @if (
                                                 $product->EndingDate != null &&
                                                     strtotime($startdatefinal) <= strtotime($now) &&
@@ -629,7 +629,7 @@ session()->get('design');
                                                     <img class="w-[70%] mx-auto transform group-hover:scale-110 transition duration-300"
                                                         src="{{ image_url('storage/' . $photo[0]) }}" alt="">
                                                     {{-- @if ($product->discount)
-                                                        <span class="absolute p-[2px_8px] text-white bg-[#ce1212] rounded-[5px] top-[1px] left-[1px]">{{$product->discount}} % Off</span>
+                                                        <span class="absolute p-[2px_8px] text-white bg-[#706233] rounded-[5px] top-[1px] left-[1px]">{{$product->discount}} % Off</span>
                                                     @endif --}}
                                                 </a>
                                             </div>
@@ -639,9 +639,9 @@ session()->get('design');
                                                 @csrf
                                                 @endif --}}
                                                 <h3
-                                                    class="py-[5px] font-bold sm:text-[16px] text-[13px] text-center text-[#ce1212] height-[65px]">
+                                                    class="py-[5px] font-bold sm:text-[16px] text-[13px] text-center text-[#706233] height-[65px]">
                                                     <a href="{{ route('product-detail', $product->slug) }}"
-                                                        class="hover:text[#ce1212]">{{ $product->name }}</a>
+                                                        class="hover:text[#706233]">{{ $product->name }}</a>
                                                 </h3>
                                                 <div class="sm:text-[12px] text-[10px] font-medium py-[5px] truncate">Pack
                                                     Size: <strong>{{ $product->pack_size }} </strong></div>
@@ -731,16 +731,16 @@ session()->get('design');
                                                         {{--                                                        @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse)) --}}
 
                                                         {{--                                                            @if ($product->Fullprice->delivery_single > 0 && $product->Fullprice->delivery_case <= 0) --}}
-                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white" >Add to Cart</a> --}}
+                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white" >Add to Cart</a> --}}
                                                         {{--                                                            @elseif($product->Fullprice->delivery_single <= 0 && $product->Fullprice->delivery_case > 0) --}}
-                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white" >Add to Cart</a> --}}
+                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white" >Add to Cart</a> --}}
                                                         {{--                                                            @else --}}
-                                                        {{--                                                                <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a> --}}
+                                                        {{--                                                                <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a> --}}
                                                         {{--                                                            @endif --}}
 
                                                         {{--                                                        @else --}}
 
-                                                        {{--                                                            <a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a> --}}
+                                                        {{--                                                            <a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a> --}}
 
                                                         {{--                                                        @endif --}}
 
@@ -749,19 +749,19 @@ session()->get('design');
 
 
                                                         {{--                                                            @if ($product->Fullprice->p_price > 0 && $product->Fullprice->price <= 0) --}}
-                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white" >Add to Cart</a> --}}
-                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
+                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white" >Add to Cart</a> --}}
+                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE" class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
                                                         {{--                                                                    <i class="fa fa-heart-o sm:text-[14px] text-[10px]" aria-hidden="true"></i> --}}
                                                         {{--                                                                </a> --}}
                                                         {{--                                                            @elseif($product->Fullprice->p_price <= 0 && $product->Fullprice->price > 0) --}}
-                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white" >Add to Cart</a> --}}
-                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
+                                                        {{--                                                                <a href="{{ route('add-to-cart',$product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white" >Add to Cart</a> --}}
+                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
                                                         {{--                                                                    <i class="fa fa-heart-o sm:text-[14px] text-[10px]" aria-hidden="true"></i> --}}
                                                         {{--                                                                </a> --}}
                                                         {{--                                                            @else --}}
                                                         {{--                                                           --}}
-                                                        {{--                                                                <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a> --}}
-                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
+                                                        {{--                                                                <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a> --}}
+                                                        {{--                                                                <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE" class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2"> --}}
                                                         {{--                                                                    <i class="fa fa-heart-o sm:text-[14px] text-[10px]" aria-hidden="true"></i> --}}
                                                         {{--                                                                </a> --}}
                                                         {{--                                                                @endif --}}
@@ -769,90 +769,90 @@ session()->get('design');
 
                                                         {{--                                                        @else --}}
 
-                                                        {{--                                                            <a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a> --}}
+                                                        {{--                                                            <a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a> --}}
 
                                                         {{--                                                        @endif --}}
                                                         {{--                                                    @else --}}
-                                                        {{--                                                        <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a> --}}
+                                                        {{--                                                        <a href="{{ route('product-detail', $product->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a> --}}
                                                         {{--                                                    @endif --}}
 
                                                         @if (\Auth::guard('customer')->user()->checkout_preference == 'delivery')
                                                             @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse))
                                                                 @if ($product->Fullprice && $product->Fullprice->delivery_single > 0 && $product->Fullprice->delivery_case <= 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @elseif ($product->Fullprice && $product->Fullprice->delivery_single <= 0 && $product->Fullprice->delivery_case > 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Add
                                                                         to Cart</a>
                                                                 @else
                                                                     <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                        class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See
+                                                                        class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See
                                                                         Details</a>
                                                                 @endif
                                                             @else
                                                                 <a href="#"
-                                                                    class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">Out
+                                                                    class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">Out
                                                                     Of Stock</a>
                                                             @endif
                                                         @elseif (\Auth::guard('customer')->user()->checkout_preference == 'pickup')
                                                             @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse))
                                                                 @if ($product->Fullprice && $product->Fullprice->p_price > 0 && $product->Fullprice->price <= 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">Add
                                                                         to Cart</a>
                                                                     <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=CASE"
-                                                                        class="bg-[#ce1212]/10 hover-bg-[#ce1212] hover-text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                                        class="bg-[#706233]/10 hover-bg-[#706233] hover-text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                                         <i class="fa fa-heart-o sm:text-[14px] text-[10px]"
                                                                             aria-hidden="true"></i>
                                                                     </a>
                                                                 @elseif ($product->Fullprice && $product->Fullprice->p_price <= 0 && $product->Fullprice->price > 0)
                                                                     <a href="{{ route('add-to-cart', $product->slug) }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="ONEHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">Add
+                                                                        class="ONEHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">Add
                                                                         to Cart</a>
                                                                     <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="bg-[#ce1212]/10 hover-bg-[#ce1212] hover-text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                                        class="bg-[#706233]/10 hover-bg-[#706233] hover-text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                                         <i class="fa fa-heart-o sm:text-[14px] text-[10px]"
                                                                             aria-hidden="true"></i>
                                                                     </a>
                                                                 @else
                                                                     <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                        class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">See
+                                                                        class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">See
                                                                         Details</a>
                                                                     <a href="{{ route('wishlist') }}/{{ $product->slug }}?preference={{ \Auth::guard('customer')->user()->checkout_preference }}&pack_size=SINGLE"
-                                                                        class="bg-[#ce1212]/10 hover-bg-[#ce1212] hover-text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                                        class="bg-[#706233]/10 hover-bg-[#706233] hover-text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                                         <i class="fa fa-heart-o sm:text-[14px] text-[10px]"
                                                                             aria-hidden="true"></i>
                                                                     </a>
                                                                 @endif
                                                             @else
                                                                 <a href="#"
-                                                                    class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">Out
+                                                                    class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">Out
                                                                     Of Stock</a>
                                                             @endif
                                                         @else
                                                             <a href="{{ route('product-detail', $product->slug ?? ' ') }}"
-                                                                class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#ce1212] hover-text-white">See
+                                                                class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover-bg-[#706233] hover-text-white">See
                                                                 Details</a>
                                                         @endif
 
                                                         {{-- @if ($product->price > 0 && $product->p_price <= 0)
                                                         @if (Helper::checkWarehouseOfProduct($product->id, \Auth::guard('customer')->user()->warehouse))
-                                                            <a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}" class="HASSAN bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] sm:text-[14px] text-[10px] hover:bg-[#ce1212] hover:text-white">Add to Cart</a>
+                                                            <a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}" class="HASSAN bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] sm:text-[14px] text-[10px] hover:bg-[#706233] hover:text-white">Add to Cart</a>
                                                         @else
-                                                            <a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a>
+                                                            <a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a>
                                                         @endif
                                                     @else
-                                                        <a href="{{route('product-detail',$product->slug)}}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a>
+                                                        <a href="{{route('product-detail',$product->slug)}}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a>
                                                     @endif --}}
 
-                                                        {{-- <a href="{{ route('wishlist') }}/{{ $product->slug }}" class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
+                                                        {{-- <a href="{{ route('wishlist') }}/{{ $product->slug }}" class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center !ml-2">
                                                         <i class="fa fa-heart-o sm:text-[14px] text-[10px]" aria-hidden="true"></i>
                                                     </a> --}}
 
                                                         <a href="{{ route('product-detail', $product->slug) }}"
-                                                            class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center ml-auto">
+                                                            class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center ml-auto">
                                                             <i class="fa fa-eye  sm:text-[14px] text-[10px]"
                                                                 aria-hidden="true"></i>
                                                         </a>
@@ -896,9 +896,9 @@ session()->get('design');
                             <i class="fa fa-times text-[24px] cursor-pointer" data-bs-dismiss="modal"
                                 aria-hidden="true"></i>
                         </div>
-                        <div class="p-[15px] !border !border-[#ce1212]/10 rounded-[5px] ">
+                        <div class="p-[15px] !border !border-[#706233]/10 rounded-[5px] ">
                             <h3
-                                class="text-[20px] font-bold mb-[20px] border-b border-[#ce1212]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#ce1212]">
+                                class="text-[20px] font-bold mb-[20px] border-b border-[#706233]/10 pb-[10px] relative before:absolute before:content-[''] before:w-[60px] before:left-0 before:h-[4px] before:rounded-[50%] before:-bottom-[2px] before:bg-[#706233]">
                                 Categories</h3>
                             <div class="dropdown h-[calc(100vh-150px)] overflow-y-auto">
                                 @php
@@ -929,7 +929,7 @@ session()->get('design');
                                                 @endforeach
                                             </ul>
                                         @else
-                                            <!-- <a class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
+                                            <!-- <a class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold" href="{{ route('product-cat', $cat_info->id) }}" role="button"
                                             id="dropdownMenuLink{{ $cat_info->id }}">
                                             {{ $cat_info->name }}
                                         </a> -->

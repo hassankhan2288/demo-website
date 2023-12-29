@@ -3,7 +3,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     @if (\Auth::guard('customer')->user())
         @if (\Auth::guard('customer')->user()->ms_number == null)
-            <div class="flex text-center items-center w-100 bg-[#ce1212]"><p style="color: #fff;" class="text-center w-100">Your account is not synced with us. Contact Admin</p></div>
+            <div class="flex text-center items-center w-100 bg-[#706233]"><p style="color: #fff;" class="text-center w-100">Your account is not synced with us. Contact Admin</p></div>
         @endif
     @endif
     <div class="!border-b flex items-center">
@@ -50,8 +50,8 @@
                     </div>
                     @else
                         <div class="flex items-center divide-x gap-x-3">
-                            <a href="{{ route('customer.register') }}" class="text-[14px] flex items-center gap-2 py-[10px] hover:text-[#ce1212]"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
-                            <a href="{{route('customer.login')}}" class="text-[14px] flex items-center gap-2 py-[10px] hover:text-[#ce1212] pl-3"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                            <a href="{{ route('customer.register') }}" class="text-[14px] flex items-center gap-2 py-[10px] hover:text-[#706233]"><i class="fa fa-user-plus" aria-hidden="true"></i> Register</a>
+                            <a href="{{route('customer.login')}}" class="text-[14px] flex items-center gap-2 py-[10px] hover:text-[#706233] pl-3"><i class="fa fa-user" aria-hidden="true"></i> Login</a>
                         </div>
                     @endif
                 </div>
@@ -62,21 +62,21 @@
     <!-- Main Nav -->
     <div class="!container sm:px-6 !px-3 mx-auto flex items-center justify-between py-[20px]">
         <div class="flex items-center sm:gap-3 gap-2">
-            <button type="button" class="btn lg:hidden w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative" data-bs-toggle="modal" data-bs-target="#mobile-menu">
-                <i class="fa fa-bars text-[18px] text-[#ce1212]" aria-hidden="true"></i>
+            <button type="button" class="btn lg:hidden w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative" data-bs-toggle="modal" data-bs-target="#mobile-menu">
+                <i class="fa fa-bars text-[18px] text-[#706233]" aria-hidden="true"></i>
             </button>
             <div class="dropdown">
-                <button type="button" class="btn lg:hidden !outline-0 w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative" data-bs-auto-close="outside" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-search text-[18px] text-[#ce1212]"></i>
+                <button type="button" class="btn lg:hidden !outline-0 w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative" data-bs-auto-close="outside" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-search text-[18px] text-[#706233]"></i>
                 </button>
 
                 <ul class="dropdown-menu md:w-[70vw] w-[80vw] !border-0 !shadow-none !bg-transparent" aria-labelledby="dropdownMenuLink">
                     <li>
                         <form action="{{route("product.search.frontend")}}" method="GET">
-                            <div class="h-[48px] rounded-[45px] border-[1px] border-[#ce1212] flex items-center">
+                            <div class="h-[48px] rounded-[45px] border-[1px] border-[#706233] flex items-center">
                                 <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                 <input type="search" autocomplete="off" name="search" placeholder="Search" class="search autocomplete w-full p-[14px_20px] rounded-l-[45px] h-full focus-visible:outline-0" value="<?php if(isset($searched)){ echo $searched;} ?>" required />
-                                <button class="p-[0_16px] text-[18px] bg-[#ce1212] rounded-r-[45px] h-full text-[18px]" type="submit"><i class="fa fa-search" style="color: #fff"></i></button>
+                                <button class="p-[0_16px] text-[18px] bg-[#706233] rounded-r-[45px] h-full text-[18px]" type="submit"><i class="fa fa-search" style="color: #fff"></i></button>
                             </div>
                         </form>
                     </li>
@@ -84,14 +84,14 @@
             </div>
         </div>
         <a href="/" class="flex items-center lg:relative absolute lg:left-0 left-1/2 transform lg:translate-x-0 -translate-x-[50%]">
-            <img src="{{asset('frontend/assets/img/cater-logo.png')}}" class="sm:w-[170px] w-[150px]" alt="">
+            <img src="{{asset('frontend/assets/img/demo.png')}}" class="sm:w-[170px] w-[150px]" alt="">
         </a>
         <div class="lg:w-5/12 mx-auto hidden lg:block">
             <form action="{{route("product.search.frontend")}}" method="GET">
-                <div class="h-[48px] rounded-[45px] border-[1px] border-[#ce1212] flex items-center">
+                <div class="h-[48px] rounded-[45px] border-[1px] border-[#706233] flex items-center">
                     <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                     <input type="search" name="search" placeholder="Search" class="search autocomplete w-full p-[14px_20px] rounded-l-[45px] h-full focus-visible:outline-0" value="<?php if(isset($searched)){ echo $searched;} ?>" required />
-                    <!-- <select name="search" class="h-full outline-0 w-[200px] border-l border-l-[#ce1212] px-[10px]">
+                    <!-- <select name="search" class="h-full outline-0 w-[200px] border-l border-l-[#706233] px-[10px]">
                         <option>All Categrory</option>
                         @php
                         // $category_all=DB::table('categories')->where('is_active',true)->get();
@@ -102,7 +102,7 @@
                         @endforeach
 
                     </select>  -->
-                    <button class="p-[0_16px] text-[18px] bg-[#ce1212] rounded-r-[45px] h-full text-[18px]" type="submit"><i class="fa fa-search" style="color: #fff"></i></button>
+                    <button class="p-[0_16px] text-[18px] bg-[#706233] rounded-r-[45px] h-full text-[18px]" type="submit"><i class="fa fa-search" style="color: #fff"></i></button>
                 </div>
             </form>
         </div>
@@ -124,11 +124,11 @@
                     @endif
                     <div class="group relative">
                         <a href="{{route('wishlist')}}" class="flex items-center">
-                            <div class="w-[35px] h-[35px] bg-[#ce1212]/10 group-hover:bg-[#ce1212] group-hover:text-white rounded-full flex items-center justify-center relative sm:mr-3">
+                            <div class="w-[35px] h-[35px] bg-[#706233]/10 group-hover:bg-[#706233] group-hover:text-white rounded-full flex items-center justify-center relative sm:mr-3">
                                 <i class="fa fa-heart-o"></i>
-                                <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#ce1212] text-[10px] text-white rounded-full flex items-center justify-center">{{Helper::wishlistCount()}}</span>
+                                <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#706233] text-[10px] text-white rounded-full flex items-center justify-center">{{Helper::wishlistCount()}}</span>
                             </div>
-                            <span class="group-hover:text-[#ce1212] lg:inline-block hidden">Wishlist</span>
+                            <span class="group-hover:text-[#706233] lg:inline-block hidden">Wishlist</span>
                         </a>
                         <!-- Shopping Item -->
                             <div class="group-hover:block absolute hidden top-full right-0 min-w-[300px] shadow-[0px_0px_30px_#7f89a140] p-3 rounded-[5px] bg-white z-[10]">
@@ -156,7 +156,7 @@
                                             </div>
                                             <div class="ml-3">
                                                 <h4 class="text-[14px] font-semibold mb-1"><a href="{{route('product-detail',$data->product['slug'])}}" target="_blank">{{$data->product['title']}}</a></h4>
-                                                {{-- <p class="text-[12px]">{{$data->quantity}} x - <span class="text-[#ce1212]">£{{number_format($data->price,2)}}</span></p> --}}
+                                                {{-- <p class="text-[12px]">{{$data->quantity}} x - <span class="text-[#706233]">£{{number_format($data->price,2)}}</span></p> --}}
                                             </div>
                                         </div>
                                     @endforeach
@@ -166,18 +166,18 @@
                                         <span class="text-[15px] font-semibold">Total</span>
                                         <span class="text-[15px] font-semibold">£{{number_format(Helper::totalWishlistPrice(),2)}}</span>
                                     </div>
-                                    <a href="{{route('cart')}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full block text-center">Cart</a>
+                                    <a href="{{route('cart')}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full block text-center">Cart</a>
                                 </div>
                             </div>
                         <!--/ End Shopping Item -->
                     </div>
                     <div class="group relative">
                         <a href="{{route('cart')}}" class="flex items-center">
-                            <div class="w-[35px] h-[35px] bg-[#ce1212]/10 group-hover:bg-[#ce1212] group-hover:text-white rounded-full flex items-center justify-center relative sm:mr-3">
+                            <div class="w-[35px] h-[35px] bg-[#706233]/10 group-hover:bg-[#706233] group-hover:text-white rounded-full flex items-center justify-center relative sm:mr-3">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#ce1212] text-[10px] text-white rounded-full flex items-center justify-center" id="circle_cart_count">0</span>
+                                <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#706233] text-[10px] text-white rounded-full flex items-center justify-center" id="circle_cart_count">0</span>
                             </div>
-                            <span class="group-hover:text-[#ce1212] lg:inline-block hidden">Cart</span>
+                            <span class="group-hover:text-[#706233] lg:inline-block hidden">Cart</span>
                         </a>
 
                         <!-- Shopping Item -->
@@ -194,7 +194,7 @@
                                         <span class="text-[15px] font-semibold">Total</span>
                                         <span class="text-[15px] font-semibold" id="total_cart_amount">£0</span>
                                     </div>
-                                    <a href="{{route('checkout')}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full block text-center">Checkout</a>
+                                    <a href="{{route('checkout')}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full block text-center">Checkout</a>
                                 </div>
                             </div>
                         <!--/ End Shopping Item -->
@@ -206,16 +206,16 @@
             <div class="flex items-center justify-end gap-3">
 
                 <div class="group relative">
-                    <a href="{{route('customer.login')}}" class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                        <i class="fa fa-heart-o text-[#ce1212]"></i>
-                        <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#ce1212] text-white rounded-full flex items-center justify-center text-[10px]">{{Helper::wishlistCount()}}</span>
+                    <a href="{{route('customer.login')}}" class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                        <i class="fa fa-heart-o text-[#706233]"></i>
+                        <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#706233] text-white rounded-full flex items-center justify-center text-[10px]">{{Helper::wishlistCount()}}</span>
                     </a>
 
                 </div>
                 <div class="group relative">
-                    <a href="{{route('customer.login')}}" class="w-[35px] h-[35px] bg-[#ce1212]/10 rounded-full flex items-center justify-center relative">
-                        <i class="fa fa-shopping-cart text-[#ce1212]" aria-hidden="true"></i>
-                        <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#ce1212] text-white rounded-full flex items-center justify-center text-[10px]">{{Helper::cartCount()}}</span>
+                    <a href="{{route('customer.login')}}" class="w-[35px] h-[35px] bg-[#706233]/10 rounded-full flex items-center justify-center relative">
+                        <i class="fa fa-shopping-cart text-[#706233]" aria-hidden="true"></i>
+                        <span class="absolute -top-3 -right-2 w-[22px] h-[22px] bg-[#706233] text-white rounded-full flex items-center justify-center text-[10px]">{{Helper::cartCount()}}</span>
                     </a>
                 </div>
             </div>
@@ -230,7 +230,7 @@
     //dd($money);
 @endphp
 <!-- Menu -->
-<div class="bg-[#ce1212] relative z-[9] lg:block hidden">
+<div class="bg-[#706233] relative z-[9] lg:block hidden">
     <div class="!container px-6 mx-auto px-4">
         <nav>
             <ul class="flex flex-wrap items-center h-full">
@@ -265,7 +265,7 @@
                             @endforeach
                         </ul>
                         <div class="pt-[10px]">
-                            <button class="bg-[#ce1212] text-white p-[11px_30px] rounded-b-[4px] text-[14px] font-bold w-full block text-center" id="show-toggle">Show more</button>
+                            <button class="bg-[#706233] text-white p-[11px_30px] rounded-b-[4px] text-[14px] font-bold w-full block text-center" id="show-toggle">Show more</button>
                         </div>
                     </div>
                 </li>
@@ -294,7 +294,7 @@
                     <div class="text-center flex flex-col items-center gap-2 mt-4 mb-3">
                         <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                         <input type="search" autocomplete="off" name="search" placeholder="Search" class="search autocomplete w-full border p-[14px_20px] h-[48px] rounded-[45px] h-full focus-visible:outline-0" value="<?php if(isset($searched)){ echo $searched;} ?>" required />
-                        <button class="p-[0_16px] text-[18px] bg-[#ce1212] rounded-[45px] h-[48px] w-full text-[18px] mt-2 text-white font-sembold" type="submit">
+                        <button class="p-[0_16px] text-[18px] bg-[#706233] rounded-[45px] h-[48px] w-full text-[18px] mt-2 text-white font-sembold" type="submit">
                             <i class="fa fa-search mr-1"></i> Search
                         </button>
                     </div>

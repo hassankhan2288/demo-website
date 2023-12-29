@@ -246,7 +246,7 @@ body{
 		
 	      <table style="width: 100%">
 			<tr style="border-bottom:3px solid #2d4936; middle-align:center">
-				<td><img src="{{asset('frontend/assets/img/cater-logo.png')}}" style="width:250px;"></td>
+				<td><img src="{{asset('frontend/assets/img/demo.png')}}" style="width:250px;"></td>
 				<td style="text-align: right">
 					<h4 class="greentext">{{$sale->reference_no}}</h4>
 					Purchase Status : <small><span class="paymentstatus">

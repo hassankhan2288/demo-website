@@ -4,14 +4,14 @@
 {{-- <script src="https://cdn.getaddress.io/scripts/getaddress-location-1.0.0.min.js"></script> --}}
 <script src="https://cdn.getaddress.io/scripts/getaddress-autocomplete-1.0.24.min.js"></script>
 <main>
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="containe px-6">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="/">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / {{ __('Register') }}</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / {{ __('Register') }}</li>
 						</ol>
 					</nav>
 				</div>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="mb-[20px]">
-                        <input id="name" type="text" placeholder="Name" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                        <input id="name" type="text" placeholder="Name" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         @error('name')
                             <span class="text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -64,7 +64,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="email" type="email" placeholder="Email Address" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                        <input id="email" type="email" placeholder="Email Address" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                         @error('email')
                             <span class="text-red" role="alert">
@@ -74,7 +74,7 @@
                     </div>
 
                     <div class="mb-[20px]">
-                        <input id="business_name" type="text" placeholder="Business Name" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('business_name') is-invalid @enderror" name="business_name" value="{{ old('business_name') }}" required>
+                        <input id="business_name" type="text" placeholder="Business Name" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('business_name') is-invalid @enderror" name="business_name" value="{{ old('business_name') }}" required>
 
                         @error('business_name')
                             <span class="text-red" role="alert">
@@ -83,7 +83,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <select name="business_type" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 " required placeholder="Business Type">
+                        <select name="business_type" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 " required placeholder="Business Type">
                             <option selected="" disabled="" hidden="" value="">Select a business type</option>
                             <optgroup label="Business">
                                <option value="Office Canteen" @if (old('business_type') == 'Office Canteen') selected="selected" @endif >Office Canteen</option>
@@ -136,7 +136,7 @@
                     </div>
 
                     <div class="mb-[20px]">
-                        <input id="postcode" type="text" placeholder="Postcode" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('postcode') is-invalid @enderror" name="postcode" value="{{ old('postcode') }}" required autocomplete="Postcode">
+                        <input id="postcode" type="text" placeholder="Postcode" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('postcode') is-invalid @enderror" name="postcode" value="{{ old('postcode') }}" required autocomplete="Postcode">
                         @error('postcode')
                             <span class="text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -144,7 +144,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="address" maxlength="50" type="text" placeholder="Address" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="Address">
+                        <input id="address" maxlength="50" type="text" placeholder="Address" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('address') is-invalid @enderror" name="address" value="{{ old('address') }}" required autocomplete="Address">
                         @error('address')
                             <span class="text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -152,7 +152,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="address_2" maxlength="50" type="text" placeholder="Address 2" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('address') is-invalid @enderror" name="address_2" value="{{ old('address_2') }}" required autocomplete="Address 2">
+                        <input id="address_2" maxlength="50" type="text" placeholder="Address 2" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('address') is-invalid @enderror" name="address_2" value="{{ old('address_2') }}" required autocomplete="Address 2">
                         @error('address_2')
                             <span class="text-red" role="alert">
                                 <strong>{{ $message }}</strong>
@@ -160,7 +160,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="city" type="text" placeholder="City" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="City">
+                        <input id="city" type="text" placeholder="City" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="City">
                         @error('city')
                         <span class="text-red" role="alert">
                             <strong>{{ $message }}</strong>
@@ -168,7 +168,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="phone_number" type="number" placeholder="Phone Number" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" min="11" required autocomplete="Phone">
+                        <input id="phone_number" type="number" placeholder="Phone Number" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('phone_number') is-invalid @enderror" name="phone_number" value="{{ old('phone_number') }}" min="11" required autocomplete="Phone">
 
                         @error('phone_number')
                             <span class="text-red" role="alert">
@@ -178,7 +178,7 @@
                     </div>
                     <div class="mb-[20px]">
                         <label for="warehouse">{{ __('Location') }}</label>
-                        <select name="warehouse" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('warehouse') is-invalid @enderror" required>
+                        <select name="warehouse" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('warehouse') is-invalid @enderror" required>
                             <option value="">Select Location</option>
                             @foreach ($warehouse as $warehouses)
                                 @if (old('warehouse') == $warehouses->id)
@@ -198,7 +198,7 @@
 
                     <div class="mb-[20px]">
                         <label for="checkout_preference">{{ __('Checkout Preference') }}</label>
-                        <select name="checkout_preference" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('checkout_preference') is-invalid @enderror" required>
+                        <select name="checkout_preference" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('checkout_preference') is-invalid @enderror" required>
                             <option value="">Select Checkout Preference</option>
                             <option value="pickup" @if (old('checkout_preference') == 'pickup') selected="selected" @endif >Self Pickup</option>
 
@@ -210,7 +210,7 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="password" type="password" placeholder="Password" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                        <input id="password" type="password" placeholder="Password" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
                         <small>Password must be atleast 8 characters with 1 uppercase & Symbol value.</small>
                         @error('password')
                             <span class="text-red" role="alert">
@@ -219,14 +219,14 @@
                         @enderror
                     </div>
                     <div class="mb-[20px]">
-                        <input id="password-confirm" type="password" placeholder="Confirm Password" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0" name="password_confirmation" required autocomplete="new-password">
+                        <input id="password-confirm" type="password" placeholder="Confirm Password" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0" name="password_confirmation" required autocomplete="new-password">
                     </div>
                     <div class="mb-[20px]">
                         <span  id="password_message"></span>
                     </div>
-                    <button class="p-[10px_30px] w-full rounded-full text-white bg-[#ce1212]" id="RegisterButton">{{ __('Register') }}</button>
+                    <button class="p-[10px_30px] w-full rounded-full text-white bg-[#706233]" id="RegisterButton">{{ __('Register') }}</button>
                     <div class="text-center mt-[15px]">
-                        <a href="{{ route('customer.login') }}" class="text-[16px] hover:text-[#ce1212]"> Back to login</a>
+                        <a href="{{ route('customer.login') }}" class="text-[16px] hover:text-[#706233]"> Back to login</a>
                     </div>
                 </form>
             </div>

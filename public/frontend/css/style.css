@@ -18,7 +18,7 @@ Version:1.0
 /* Colors */
 :root {
 	--color-default: #212529;
-	--color-primary: #ce1212;
+	--color-primary: #706233;
 	--color-secondary: #37373f;
 }
 html,body{
@@ -94,7 +94,7 @@ html,body{
 
   /* organic tabs css */
   .organic-tabs .active{
-	background-color: #ce1212;
+	background-color: #706233;
 	color: #ffffff;
   }
 
@@ -111,13 +111,13 @@ html,body{
 
 /* pagination */
 .product-pagination .active>.page-link,.product-pagination  .page-link.active{
-	background-color: #ce1212 !important;
+	background-color: #706233 !important;
 	color: #fff !important;
-	border-color: #ce1212 !important;
+	border-color: #706233 !important;
 }
 
 .product-pagination .page-link{
-	color: #ce1212 !important;
+	color: #706233 !important;
 }
 
 /* Mobile menu popup */
@@ -215,7 +215,7 @@ a.TWOHM{
 	pointer-events: none;
 }
 .bg-w-imp,.page-item.active .page-link{
-	background: #ce1212 !important;
+	background: #706233 !important;
 }
 .pickup_section {
     position: relative;
@@ -343,7 +343,7 @@ span.custom_address_button:hover {
 }
 .red_border_shine {
     padding: 15px;
-    box-shadow: 0px 0px 4px 0px #ce1212bd;
+    box-shadow: 0px 0px 4px 0px #706233bd;
     border-radius: 4px;
 }
 #delete_dom {
@@ -371,10 +371,10 @@ span.custom_address_button:hover {
     margin-bottom: 15px;
 }
 .btn_container > button.selected_price {
-    box-shadow: 0px 0px 4px 0px #ce1212;
+    box-shadow: 0px 0px 4px 0px #706233;
 }
 .btn_container > button:focus {
-    box-shadow: 0px 0px 4px 0px #ce1212;
+    box-shadow: 0px 0px 4px 0px #706233;
 }
 /*******/
 .custom_spinner {
@@ -427,7 +427,7 @@ span.custom_address_button:hover {
 }
 
 .custom_design_hm small {
-    color: #ce1212;
+    color: #706233;
     font-weight: 600;
     font-size: 11px;
 }
@@ -470,7 +470,7 @@ iframe#iframe-payment-container {
     z-index: 8;
   }
 .connect-btn {
-    background-color: #ce1212 !important;
+    background-color: #706233 !important;
     color: #ffffff !important;
     border-radius: 0px;
     border: none;
@@ -677,7 +677,7 @@ input[type="number"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-    background: #ce1212;
+    background: #706233;
     display: flex;
     width: 134px;
 }
@@ -822,7 +822,7 @@ button.qty-count {
     
     li.inner_li_order .buttons a {
         color: #fff !important;
-        background: #ce1212;
+        background: #706233;
         border-radius: 0;
     }
     
@@ -844,7 +844,7 @@ button.qty-count {
 .selecdel{
     padding: 5px 12px;
     font-size: 12px;
-    background: #ce1212;
+    background: #706233;
     color: white;
     font-weight: bold;
 }
@@ -856,7 +856,7 @@ button.qty-count {
     padding-top: 5px !important;
     display: block;
     margin-bottom: 4px;
-    color: #ce1212;
+    color: #706233;
     font-weight: bold;
 }
 .caseorsingle {
@@ -866,7 +866,7 @@ button.qty-count {
     width: 65px;
 }
 .btn.btn-link.btnview {
-    color: #ce1212;
+    color: #706233;
     text-decoration: none;
 }
 .btn.price_selector{
@@ -875,7 +875,7 @@ button.qty-count {
 }
 .btn.price_selector.selected_price {
 
-    background: #ce1212;
+    background: #706233;
     color: white;
 }
 .modal-body.scrollallow{
@@ -901,7 +901,7 @@ iframe.threeDs{
 }
 .getAddress_autocomplete_suggestion_show_all {
     font-weight: bold;
-    background: #ce1212;
+    background: #706233;
     text-align: center;
     color: white;
 }
@@ -909,13 +909,13 @@ iframe.threeDs{
     border: 1px solid #000 !important;
 }
 .pickup_timer label {
-    background: #ce1212;
+    background: #706233;
     color: white;
     padding: 4px 20px;
 }
 .saleoffer {
     position: absolute;
-    background: #ce1212;
+    background: #706233;
     top: -12px;
     width: 100%;
     left: 0px;
@@ -935,7 +935,7 @@ iframe.threeDs{
     position: relative;
 }
 .cartbtnbold{
-    background: #ce1212;
+    background: #706233;
     color: white;
     padding: 3px 11px;
     border-radius: 10px;

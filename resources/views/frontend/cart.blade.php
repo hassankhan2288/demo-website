@@ -2,14 +2,14 @@
 @section('title','Cart Page')
 @section('main-content')
 	<!-- Breadcrumbs -->
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Cart</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Cart</li>
 						</ol>
 					</nav>
 				</div>
@@ -42,7 +42,7 @@
 				<div class=" w-full">
 					<table class="table shopping-summery">
 						<thead>
-							<tr class="bg-[#ce1212]/10">
+							<tr class="bg-[#706233]/10">
 								<th class="p-[0.5rem] text-[14px]">PRODUCT</th>
 								<th class="p-[0.5rem] text-[14px]">NAME</th>
 								<th class="p-[0.5rem] text-[14px]">TYPE</th>
@@ -90,7 +90,7 @@
 												<td class="productqty text-center !p-[1rem] align-middle text-[14px] none_force_mobile" data-title="Qty">
 													<div class="qty-input">
 														<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">
+														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">
 														<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
 														<input type="hidden" name="qty_id[]" value="{{$cart->id}}">
 														<input type="hidden" name="type[]" value="{{$cart->type}}">
@@ -115,8 +115,8 @@
 												<td class="productqty text-center !p-[1rem] align-middle text-[14px] none_force_mobile" data-title="Qty">
 													<div class="qty-input">
 														<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-{{--														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">--}}
-														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="0" max="10" data-min="1" data-max="10" value="{{ old('quant.' . $key, $cart->quantity) }}">
+{{--														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">--}}
+														<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="0" max="10" data-min="1" data-max="10" value="{{ old('quant.' . $key, $cart->quantity) }}">
 														<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
 														<input type="hidden" name="qty_id[]" value="{{$cart->id}}">
 														<input type="hidden" name="type[]" value="{{$cart->type}}">
@@ -142,7 +142,7 @@
 											<td class="text-center !p-[1rem] align-middle text-[14px] main_mobile_force" data-title="Qty">
 												<div class="qty-input">
 													<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-													<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="1" max="9" data-min="1" data-max="9" value="{{$cart->quantity}}">
+													<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="1" max="9" data-min="1" data-max="9" value="{{$cart->quantity}}">
 													<button class="qty-count qty-count--add" data-action="add" type="button">+</button>
 												</div>
 											</td>
@@ -184,7 +184,7 @@
 {{--														<td class="productqty text-center !p-[1rem] align-middle text-[14px] none_force_mobile" data-title="Qty">--}}
 {{--															<div class="qty-input">--}}
 {{--																<button class="qty-count qty-count--minus" data-action="minus" type="button" disabled>-</button>--}}
-{{--																<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $pro->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">--}}
+{{--																<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $pro->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="0" max="10" data-min="1" data-max="10" value="{{$cart->quantity}}">--}}
 {{--																<button class="qty-count qty-count--add" data-action="add" type="button" disabled>+</button>--}}
 {{--																<input type="hidden" name="qty_id[]" value="{{$cart->id}}">--}}
 {{--																<input type="hidden" name="type[]" value="{{$cart->type}}">--}}
@@ -209,7 +209,7 @@
 {{--														<td class="text-center !p-[1rem] align-middle text-[14px] main_mobile_force" data-title="Qty">--}}
 {{--															<div class="qty-input">--}}
 {{--																<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>--}}
-{{--																<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="1" max="9" data-min="1" data-max="9" value="{{$cart->quantity}}">--}}
+{{--																<input class="product-qty" type="number" name="quant[{{$key}}]" data-preference="{{ $cart->preference }}" data-product_id="{{ $cart->product->id }}" data-user_id="{{ \Auth::guard('customer')->user()->id }}" class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="1" max="9" data-min="1" data-max="9" value="{{$cart->quantity}}">--}}
 {{--																<button class="qty-count qty-count--add" data-action="add" type="button">+</button>--}}
 {{--															</div>--}}
 {{--														</td>--}}
@@ -233,7 +233,7 @@
 										<td></td>
 										<td></td>
 										<td class="text-right">
-											<button class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block" type="submit">Update</button>
+											<button class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block" type="submit">Update</button>
 										</td>
 									</track>
 								@else
@@ -252,8 +252,8 @@
 			<!--/ End Shopping Summery -->
 			<!-- Total Amount -->
 			<div class="flex flex-wrap justify-end py-[40px]">
-				<div class="lg:w-4/12 md:w-7/12 w-full !border !border-[#ce1212]/10">
-					<h3 class="p-[10px_15px] bg-[#ce1212]/10 py-[10px]">Cart Total</h3>
+				<div class="lg:w-4/12 md:w-7/12 w-full !border !border-[#706233]/10">
+					<h3 class="p-[10px_15px] bg-[#706233]/10 py-[10px]">Cart Total</h3>
 					<ul class="!p-6">
 						<li class="flex justify-between py-[10px] border-b border-[#000]" id="cart_subtotal" data-price="{{Helper::totalCartPrice()}}">Cart Subtotal <span>£{{number_format(Helper::totalCartPrice(),2)}}</span></li>
 						<li class="flex justify-between py-[10px] border-b border-[#000]" id="total_vart">Vat<span>£{{number_format(Helper::totalCartVatPrice(),2)}}</span></li>
@@ -297,7 +297,7 @@
 						@endif
 					</ul>
 					<div class="!px-4 !pb-4 flex justify-end gap-2">
-						<a href="{{route('product-grids')}}" ><button type="button" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block">Continue shopping</button></a>
+						<a href="{{route('product-grids')}}" ><button type="button" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block">Continue shopping</button></a>
 						@if (Helper::cartCount())
 							<a href="{{route('checkout')}}" >
 								<button type="button" class="btn btn-success p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block bg-[#198754]">Checkout</button>

@@ -3,15 +3,15 @@
 @section('main-content')
 
   <!-- Breadcrumbs -->
-  <div class="w-full bg-[#ce1212]/10 py-[15px]">
+  <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"><a href="{{route('customer.dashboard')}}"> / Dashboard</a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Orders</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"><a href="{{route('customer.dashboard')}}"> / Dashboard</a></li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Orders</li>
 						</ol>
 					</nav>
 				</div>
@@ -27,10 +27,10 @@
     <div class="!container px-6 mx-auto">
       <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
         <div class="lg:col-span-3 md:col-span-4">
-          <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] overflow-hidden">
+          <div class="bg-white !border !border-[#706233]/10 rounded-[5px] overflow-hidden">
             <a href="{{route('customer.dashboard')}}" class="bg-white  p-[15px] block border-b"> <i class="fa fa-tachometer text-[16px] mr-[5px]"></i>  Dashboard</a>
             <a href="{{route('customer.profile')}}" class="bg-white p-[15px] block border-b"> <i class="fa fa-user text-[16px] mr-[5px]"></i>   Profile</a>
-            <a href="{{route('customer.orders')}}" class="bg-[#ce1212] p-[15px] text-white block border-b"> <i class="fa fa-table text-[16px] mr-[5px]"></i>  Orders</a>
+            <a href="{{route('customer.orders')}}" class="bg-[#706233] p-[15px] text-white block border-b"> <i class="fa fa-table text-[16px] mr-[5px]"></i>  Orders</a>
             <a href="{{ route('customer.logout') }}"  class="bg-white p-[15px] block"> <i class="fa fa-sign-in text-[16px] mr-[5px]"></i> {{ __('Logout') }}</a>
             {{-- <a href="{{ route('customer.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="bg-white p-[15px] block"> <i class="fa fa-sign-in text-[16px] mr-[5px]"></i> {{ __('Logout') }}</a> --}}
             <form id="logout-form" action="{{ route('customer.logout') }}" method="POST" style="display: none;">
@@ -47,7 +47,7 @@
                   <div class="table-responsive main_web">
                         {{--<table class="display nowrap w-100 table sale-list dataTable dataTables_wrapper container-fluid dt-bootstrap4" id="customer_order_table">--}}
                       <table class="display nowrap table sale-list dataTable dataTables_wrapper container-fluid dt-bootstrap4" id="customer_order_table">
-                      <thead class="bg-[#ce1212]/10">
+                      <thead class="bg-[#706233]/10">
                         <tr>
                           <th data-sortable="true" data-priority="1" class="text-center p-[0.5rem] text-[14px] bg-w-imp p-[15px] text-white">Order_Id</th>
                           <th data-sortable="true" class="text-center p-[0.5rem] text-[14px] bg-w-imp p-[15px] text-white">Order Quantity</th>
@@ -69,7 +69,7 @@
                             <td class="text-center !p-[1rem] align-middle text-[14px]"></?php echo $item->address1 ?></td>
                             <td class="text-center !p-[1rem] align-middle text-[14px]">{{$item->total_amount}}</td>
                             <td class="text-center !p-[1rem] align-middle text-[14px]">
-                              <a href="{{url('customer/Order-Status/'.$item->id.'')}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Check Status</a>
+                              <a href="{{url('customer/Order-Status/'.$item->id.'')}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Check Status</a>
                               @if($item->Delivery_Status!='pending' || $item->Order_Cancel_Status==1)
                                 <a href="{{url('customer/Order-Status/'.$item->id.'')}}" class="bg-yellow-500 text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold opacity-70">Cancel Order</a>
                               @else

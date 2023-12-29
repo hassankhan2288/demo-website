@@ -8,14 +8,14 @@
     <input type="hidden" id="env_variable" value="{{ $env }}" />
     <input type="hidden" id="env_url" value="{{ $url }}" />
     <input type="hidden" id="user_id" value="{{ $user->ms_number }}" />
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Checkout</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Checkout</li>
 						</ol>
 					</nav>
 				</div>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="lg:col-span-4 ">
-                        <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[20px]">
+                        <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[20px]">
                             @php
                                 $total_amount=Helper::totalCartPrice();
                                $vat= Helper::totalCartVatPrice();
@@ -141,10 +141,10 @@
                             </div>
                             <!--/ End Order Widget -->
                             {{-- @if ($total_amount <= 249 && $warehouse_id == 7) --}}
-                                <button class="bg-[#ce121275] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold  mt-6">Proceed To Payment</button>
+                                <button class="bg-[#70623375] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold  mt-6">Proceed To Payment</button>
                             {{-- @else --}}
                          
-                                {{-- <span id="proceed_payment" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
+                                {{-- <span id="proceed_payment" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
                             {{-- @endif --}}
                         </div>
                     </div>
@@ -194,17 +194,17 @@
         <div class="modal-content">
             <div class="modal-header">
             <h1 class="modal-title fs-5" id="new_address_modalLabel">Shipping Address 2</h1>
-            <button type="button" class="btn-close bg-[#ce1212] text-white" data-bs-dismiss="modal" aria-label="Close">
+            <button type="button" class="btn-close bg-[#706233] text-white" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
             </div>
             <div class="modal-footer">
-            <button id="change_shipping" type="button" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
+            <button id="change_shipping" type="button" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
             </div>
         </div>
         </div>

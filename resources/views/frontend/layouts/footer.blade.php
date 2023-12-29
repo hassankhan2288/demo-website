@@ -1,53 +1,3 @@
-<section class="py-[40px] bg-[#ce1212]/10 mb-[24px] z-hm-footer">
-	<div class="container px-6 mx-auto">
-		<div class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5">
-			{{--<div>
-				<!-- Start Single Service -->
-				<div class="flex items-center">
-					<i class="fa fa-rocket text-[33px]" aria-hidden="true"></i>
-					<div class="ml-[15px]">
-						<h4 class="text-[16px] mb-[10px] font-semibold">Free shiping</h4>
-						<p class="text-[14px] font-medium">Orders over £100</p>
-					</div>
-				</div>
-				<!-- End Single Service -->
-			</div>--}}
-			{{--<div>
-				<!-- Start Single Service -->
-				<div class="flex items-center">
-					<i class="fa fa-refresh text-[30px]" aria-hidden="true"></i>
-					<div class="ml-[15px]">
-						<h4 class="text-[16px] mb-[10px] font-semibold">Free Return</h4>
-						<p class="text-[14px] font-medium">Within 30 days returns</p>
-					</div>
-				</div>
-				<!-- End Single Service -->
-			</div>--}}
-			<div>
-				<!-- Start Single Service -->
-				<div class="flex items-center">
-					<i class="fa fa-lock text-[35px]" aria-hidden="true"></i>
-					<div class="ml-[15px]">
-						<h4 class="text-[16px] mb-[10px] font-semibold">Secure Payment</h4>
-						<p class="text-[14px] font-medium">100% secure payment</p>
-					</div>
-				</div>
-				<!-- End Single Service -->
-			</div>
-			<div>
-				<!-- Start Single Service -->
-				<div class="flex items-center">
-					<i class="fa fa-tag text-[30px]" aria-hidden="true"></i>
-					<div class="ml-[15px]">
-						<h4 class="text-[16px] mb-[10px] font-semibold">Best Price</h4>
-						<p class="text-[14px] font-medium">Guaranteed price</p>
-					</div>
-				</div>
-				<!-- End Single Service -->
-			</div>
-		</div>
-	</div>
-</section>
 <!-- Newsletter section start -->
     <section class="py-[100px] relative -mt-[24px]">
 	    <img src="{{asset('public/images/category/20221125034001.jpg')}}" class="w-full h-full object-cover absolute inset-0 opacity-50">
@@ -72,9 +22,9 @@
 				<h6 class="mb-[.5rem] text-[35px] font-bold">Subscribe to our newsletter</h6>
 				<p class="mb-[15px] text-[14px] ">Subscribe to the mailing list to receive updates on special offers, new arrivals and our promotions.</p>
 				<div class="relative">
-					<input type="text" name="email" id="emailsubs" placeholder="Enter your email address" class="w-full bg-white p-[15px_150px_15px_20px] rounded-[50px] !border !border-[#ce1212]" required />
+					<input type="text" name="email" id="emailsubs" placeholder="Enter your email address" class="w-full bg-white p-[15px_150px_15px_20px] rounded-[50px] !border !border-[#706233]" required />
 					<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-					<button class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold absolute right-[7px] top-[7px]" type="submit" >Subscribe</button>
+					<button class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold absolute right-[7px] top-[7px]" type="submit" >Subscribe</button>
 					<?php if(isset($success)) { ?>
 						<div>Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
 					<?php } ?>
@@ -86,103 +36,102 @@
     </section>
     <!-- offer section end -->
 
-	<footer class="bg-[#ce1212]/10 relative">
+	<footer style="background-color:#FAE7C9 ">
 		<div class="container">
-			<div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:divide-x divide-[#ce1212]/10">
-				<div class="flex sm:py-[70px] py-6 md:pl-[30px] flex-column">
-					{{-- <div class="flex">
-						<div class="w-[65px] h-[65px] bg-[#ce1212] text-[24px] flex items-center justify-center rounded-full shrink-0">
-							<i class="fa fa-clock-o text-white text-[24px]" aria-hidden="true"></i>
-						</div>
-						<div class="ml-[15px]">
-							<h4 class="text-[18px] mb-[5px] font-bold">Opening Hours</h4>
-							<p class="text-[14px]">
-								Mon - Fri: 09:00 AM - 05:30 PM<br>
-								Sat - Sun: 11:00 AM - 05:00 PM
+			<div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:divide-x divide-[#706233]/10">
+				<div class="flex sm:py-[70px] py-6 flex-column">
+					<div class="">
+						<h4 class="text-[18px] mb-[25px] text-[#706233] font-bold">About Company</h4>
+						<p class="text-[14px] leading-[34px]">
+						 This is a sample paragraph.
+						 You can replace this text 
+						 with your own content
+						</p>
+					</div>
+					<div>
+						<img src="{{asset('frontend/assets/img/demo.png')}}" alt="" style="width: 200px">
+					</div>
+				</div>
+				<div class="sm:py-[70px] py-6 flex flex-col gap-3 sm:pl-[30px]">
+					<div class="flex">
+						<div class="sm:ml-[17px]">
+							<h4 class="text-[18px] mb-[25px] text-[#706233] font-bold">ADDRESS</h4>
+							<p class="text-[14px] leading-[34px]">
+								Karachi Pakistan<br>
+								Steet no 6<br>
+								ABC123 546<br>
+								Demo
 							</p>
-						</div>
-					</div> --}}
-					<div class="flex  flex-row">
-						<div class="w-[65px] h-[65px] bg-[#ce1212] text-[24px] flex items-center justify-center rounded-full shrink-0">
-							<i class="fa fa-list text-white text-[24px]" aria-hidden="true"></i>
-						</div>
-						<div class="ml-[15px]">
-							<a href="javascript:void(0)" class="text-[18px] mb-[5px] font-bold mt-2">Popular Categories</a>
-							<ul class="pt-[10px]">
-								@if(\Helper::popularCategories())
-									@foreach ( \Helper::popularCategories() as $cat)
-									<li><a href="{{ route('product-cat',$cat->id) }}">{{ $cat->name }}</a></li>
-									@endforeach
-								@else
-									@foreach ( \Helper::defaultCategories() as $cat)
-									<li><a href="{{ route('product-cat',$cat->id) }}">{{ $cat->name }}</a></li>
-									@endforeach
-								@endif
-							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="sm:py-[70px] py-6 flex flex-col gap-3 sm:pl-[30px]">
-					<div class="flex items-center">
-						<div class="w-[65px] h-[65px] bg-[#ce1212] text-[24px] flex items-center justify-center rounded-full shrink-0">
-							<i class="fa fa-phone text-white text-[24px]" aria-hidden="true"></i>
-						</div>
-						<div class="ml-[15px]">
-							<h4 class="text-[18px] mb-[5px] font-bold">Contact</h4>
-							<a href="mailto:info@cater-choice.com" class="text-[14px]">
-								info@cater-choice.com
-							</a>
-							<a href="{{ route('contact') }}" class="text-[14px] d-block">
-								Contact Us
-							</a>
+					<div class="flex">
+						<div class="sm:ml-[17px]">
+							<h4 class="text-[18px] mb-[25px] text-[#706233] font-bold">CONTACT</h4>
+							<p class="text-[14px] leading-[34px]">
+								Email demo@gmail.com<br>
+								TEL 0312 8568453<br>
+								FAX 03123456789
+							</p>
 						</div>
 					</div>
-{{--					<div class="flex items-center">--}}
-{{--						<div class="w-[65px] h-[65px] bg-[#ce1212] text-[24px] flex items-center justify-center rounded-full shrink-0">--}}
-{{--							<i class="fa fa-phone text-white text-[24px]" aria-hidden="true"></i>--}}
-{{--						</div>--}}
-{{--						<div class="ml-[15px]">--}}
-{{--							<h4 class="text-[18px] mb-[5px] font-bold">Phone</h4>--}}
-{{--							<a href="tel:0044 1274 301910" class="text-[14px]">--}}
-{{--								0044 1274 301910--}}
-{{--							</a>--}}
-{{--						</div>--}}
-{{--					</div>--}}
-{{--					<div class="flex items-center">--}}
-{{--						<div class="w-[65px] h-[65px] bg-[#ce1212] text-[24px] flex items-center justify-center rounded-full shrink-0">--}}
-{{--							<i class="fa fa-map-marker text-white text-[24px]" aria-hidden="true"></i>--}}
-{{--						</div>--}}
-{{--						<div class="ml-[15px]">--}}
-{{--							<h4 class="text-[18px] mb-[5px] font-bold">Address</h4>--}}
-{{--							<a href="https://goo.gl/maps/tuADY4qHM95TCBYy6" class="text-[14px]">--}}
-{{--								Neville Road, Bradford,BD4 8TU<br>--}}
-{{--								United Kingdom<br>--}}
-{{--							</a>--}}
-{{--						</div>--}}
-{{--					</div>--}}
 				</div>
-				<div class="md:py-[70px] pt-6 pb-12 md:pl-[30px]">
-					<h4 class="text-[18px] mb-[10px] font-bold">Follow Us</h4>
-					<div class="flex items-center">
-						<a href="https://www.tiktok.com/@cater_choice" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#ce1212] text-white !border text-[16px] mr-[15px]">
-							<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
-						</a>
-						<a href="https://www.instagram.com/cater_choice/?hl=en" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#ce1212] text-white !border text-[16px] mr-[15px]">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
+				{{-- <div class="sm:py-[70px] py-6 flex flex-col gap-3 md:pl-[30px]">
+				  <div class="flex">
+					<div class="md:ml-[17px]">
+						<h4 class="text-[18px] mb-[25px] text-[#706233] font-bold">SERVICE</h4>
+						<ul class="text-[14px]">
+							<li class="mb-2"><a href="{{ route('contact') }}">{{trans('b2c_file.Contact')}}</a></li>
+							<li class="mb-2"><a href="https://www.volimea.de/newsletteranmeldung/"> {{trans('b2c_file.Newsletter subscription')}}</a></li>
+							<li class="mb-2"><a href="https://www.volimea.de/ruecksendungen-retouren/"> {{trans('b2c_file.Returns')}}</a></li>
+							<li class="mb-2"><a href="https://www.volimea.de/wp-content/uploads/2023/08/Frachtkosten_Zahlungsbedingungen.pdf"> {{trans('b2c_file.Shipping and payment terms')}}</a></li>
+						</ul>
 					</div>
-				</div>
+				  </div>
+				</div> --}}
+				<div class="sm:py-[70px] py-6 flex flex-col gap-3 lg:pl-[30px]">
+					<div class="flex">
+					  <div class="lg:ml-[17px]">
+						  <h4 class="text-[18px] mb-[25px] text-[#706233] font-bold">Quick Links</h4>
+						  <ul class="text-[14px]">
+							  <li class="mb-2"><a href="#">Support</a></li>
+							  <li class="mb-2"><a href="#">FAQ</a></li>
+							  <li class="mb-2"><a href="{{ route('aboutus') }}">About</a></li>
+							  <li class="mb-2"><a href="{{ route('contact') }}">Contact</a></li>
+						  </ul>
+					  </div>
+					</div>
+				  </div>
+				
 			</div>
 		</div>
-		<div class="border-t border-[#ce1212]/10 py-[25px]">
-			<div class="container">
-				<div class="copyright text-center">
-					<a href="{{ route('terms_and_condition') }}/#orderPlacementPolicy" class="mr-1 text-[10px]">Order Placement Policy</a>
-					<a href="{{ route('terms_and_condition') }}/#deliveryPolicy" class="mr-1 text-[10px]">Delivery Policy</a>
-					<a href="{{ route('terms_and_condition') }}/#warrantyPolicy" class="text-[10px]">Warranty Policy</a>
+		<div class="border-t border-[#706233]/10 py-[25px]">
+			<div class="!container px-6 mx-auto d-flex flex-wrap align-items-center justify-content-between">
+				<div class="font-weight-bold text-[14px]">
+					&copy; Copyright <strong><span class="text-[#706233]">Demo</span></strong>. All rights reserved
 				</div>
-				<div class="copyright text-center text-[10px]">
-					&copy; Copyright <strong><span class="text-[#ce1212]">Cater-Choice</span></strong>. All Rights Reserved
+				<div class="bottom_footer">
+					<h4 class="text-[18px] mb-[10px] font-bold">Follow Us</h4>
+					<div class="right_side">
+						<div class="flex items-center">
+							<a href="#" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#706233] text-white !border text-[14px] mr-[15px]">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+							<a href="#" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#706233] text-white !border text-[14px] mr-[15px]">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+							</a>
+							<a href="#" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#706233] text-white !border text-[16px] mr-[15px]">
+								<i class="fa fa-youtube" aria-hidden="true"></i>
+							</a>
+							<a href="#" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#706233] text-white !border text-[14px] mr-[15px]">
+								<i class="fa fa-pinterest" aria-hidden="true"></i>
+							</a>
+							<a href="#" class="w-[40px] h-[40px] flex items-center justify-center rounded-full bg-[#706233] text-white !border text-[14px] mr-[15px]">
+								<i class="fa fa-home" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -393,7 +342,7 @@
 									input.setAttribute("value", slot);
 
 									const span = document.createElement("span");
-									span.setAttribute("class", "peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]");
+									span.setAttribute("class", "peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]");
 
 									const text = document.createTextNode(slot);
 
@@ -409,7 +358,7 @@
 							// for (let i = 0; i < result.length; i++) {
 							// 	html += '<label class="flex items-center cursor-pointer relative text-black text-[16px]" for="flexRadioDefault2'+result[i]+'" value="'+result[i]+'">';
 							// 	html += '<input class="absolute opacity-0 z-[0] peer" type="radio" id="flexRadioDefault2'+result[i]+'" name="pick_time" />';
-							// 	html += '<span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>';
+							// 	html += '<span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>';
 							// 	html += result[i]+ '</label></div></div>';
 							// }
 							// $( "#warehouse_id" ).after( html );

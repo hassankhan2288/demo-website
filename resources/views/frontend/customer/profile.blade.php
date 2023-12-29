@@ -27,15 +27,15 @@
 
 
   <!-- Breadcrumbs -->
-  <div class="w-full bg-[#ce1212]/10 py-[15px]">
+  <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"><a href="{{route('customer.dashboard')}}"> / Dashboard</a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Profile</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"><a href="{{route('customer.dashboard')}}"> / Dashboard</a></li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Profile</li>
 						</ol>
 					</nav>
 				</div>
@@ -51,9 +51,9 @@
     <div class="!container px-6 mx-auto">
       <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
         <div class="lg:col-span-3 md:col-span-4">
-          <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] overflow-hidden">
+          <div class="bg-white !border !border-[#706233]/10 rounded-[5px] overflow-hidden">
             <a href="{{route('customer.dashboard')}}" class="bg-white p-[15px] block border-b"> <i class="fa fa-tachometer text-[16px] mr-[5px]"></i>  Dashboard</a>
-            <a href="{{route('customer.profile')}}" class="bg-[#ce1212] text-white p-[15px] block border-b"> <i class="fa fa-user text-[16px] mr-[5px]"></i>   Profile</a>
+            <a href="{{route('customer.profile')}}" class="bg-[#706233] text-white p-[15px] block border-b"> <i class="fa fa-user text-[16px] mr-[5px]"></i>   Profile</a>
             <a href="{{route('customer.orders')}}" class="bg-white p-[15px] block border-b"> <i class="fa fa-table text-[16px] mr-[5px]"></i>  Orders</a>
             <a href="{{ route('customer.logout') }}"  class="bg-white p-[15px] block"> <i class="fa fa-sign-in text-[16px] mr-[5px]"></i> {{ __('Logout') }}</a>
             {{-- <a href="{{ route('customer.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="bg-white p-[15px] block"> <i class="fa fa-sign-in text-[16px] mr-[5px]"></i> {{ __('Logout') }}</a> --}}
@@ -88,7 +88,7 @@
           @endif
           <form action="{{url('customer/my-profile-update')}}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
-            <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[15px]">
+            <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[15px]">
               <div class="w-100 m-auto mb-5">
                 <div class="avatar-upload">
                   <div class="avatar-edit">
@@ -152,13 +152,13 @@
               </div>
               <div class="w-full py-2 text-right mt-3">
                 <button type="submit" class="bg-[#198754] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold hover:opacity-80 cursor-pointer"> Update</button>
-                <a data-bs-toggle="modal" data-bs-target="#openpasswordmodel" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold hover:opacity-80 cursor-pointer inline-block">Change Password</a>
+                <a data-bs-toggle="modal" data-bs-target="#openpasswordmodel" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold hover:opacity-80 cursor-pointer inline-block">Change Password</a>
               </div>
             </div>
             <div class="col-md-12 flex p-0 flex-column-mobile">
               <div class="col-md-6 p-0">
                 <h3 class="text-[18px] font-semibold mb-3 mt-4">Billing Address</h3>
-                <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[15px]">
+                <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[15px]">
                   <div class="mb-3">
                     <label> Address</label>
                     <textarea id="address" name="address"  class="form-control">{{Auth::user()->address}}</textarea>
@@ -171,7 +171,7 @@
               </div>
               <div class="col-md-6 p-0">
                 <h3 class="text-[18px] font-semibold mb-3 mt-4">Shipping Address</h3>
-                <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[15px]">
+                <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[15px]">
                   <div class="mb-3">
                     <label > Address</label>
                     <textarea name="address_2"  class="form-control">{{$user->address_2}}</textarea>
@@ -186,7 +186,7 @@
               <div class="col-md-12 flex p-0">
                 <div class="col-md-6 p-0">
                   <h3 class="text-[18px] font-semibold mb-3 mt-4">Shipping Address 2</h3>
-                  <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[15px]">
+                  <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[15px]">
                     <div class="mb-3">
                       <label > Address</label>
                       <textarea name="address_3"  class="form-control">{{Auth::user()->address_3}}</textarea>

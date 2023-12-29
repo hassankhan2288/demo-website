@@ -23,14 +23,14 @@
 	</style>
 <main>
 	<!-- Breadcrumbs -->
-	<div class="w-full bg-[#ce1212]/10 py-[15px]">
+	<div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Product Details</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Product Details</li>
 						</ol>
 					</nav>
 				</div>
@@ -48,7 +48,7 @@
 			<div class="grid lg:grid-cols-12 grid-cols-1 !gap-8">
 				<div class="xl:col-span-4 lg:col-span-5">
 					<!-- Product Slider -->
-					<div class="!border !border-[#ce1212]/10 text-center rounded-[10px] p-[15px] hover:!border-[#ce1212] transition duration-300">
+					<div class="!border !border-[#706233]/10 text-center rounded-[10px] p-[15px] hover:!border-[#706233] transition duration-300">
 						<div class="product-gallery swiper w-full">
 							<div class="swiper-wrapper">
 								@php
@@ -73,7 +73,7 @@
 					<div class="thumbnail-swiper swiper w-full mt-3">
 						<div class="swiper-wrapper">
 							@foreach($photo as $data)
-								<div class="swiper-slide !border !border-[#ce1212]/10 text-center rounded-[10px] p-[10px] hover:!border-[#ce1212] transition duration-300">
+								<div class="swiper-slide !border !border-[#706233]/10 text-center rounded-[10px] p-[10px] hover:!border-[#706233] transition duration-300">
 									{{-- <img src="{{asset('storage/'.$data)}}" alt="{{$data}}"> --}}
 									@php
 										$data = str_replace('storage/','',$data);
@@ -316,7 +316,7 @@
 							<input type="hidden" name="product_id" value="{{ $product_detail->id}}">
 							<div class="qty-input">
 								<button class="qty-count qty-count--minus" data-action="minus" type="button">-</button>
-								<input class="product-qty" type="number" name="quant[1]"  class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#ce1212]/10" min="1" max="10" data-min="1" data-max="10" value="1" id="quantity">
+								<input class="product-qty" type="number" name="quant[1]"  class="w-[70px] p-[8px_5px] rounded-[5px] !border border-[#706233]/10" min="1" max="10" data-min="1" data-max="10" value="1" id="quantity">
 								<button class="qty-count " data-action="add" type="button">+</button>
 							</div>
 							{{-- <input type="number" name="quant[1]" class="w-[70px] p-2 border rounded-[5px]" min="1" max="10"  data-min="1" data-max="10" value="1" id="quantity" /> --}}
@@ -324,29 +324,29 @@
 						<div class="flex items-center flex-wrap gap-3 mt-4">
 							@if($stock == 0 AND $warehouse_id != 0)
 								{{-- @if ($product_detail->stock->isNotEmpty() && $product_detail->stock->warehouse_id != \Auth::guard('customer')->user()->warehouse) --}}
-									<button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold disabled:opacity-70" disabled>Add to cart</button>
-									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold opacity-70">
+									<button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold disabled:opacity-70" disabled>Add to cart</button>
+									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold opacity-70">
 										<i class="fa fa-heart-o"></i>
 									</a>
 									<p class="text-red w-full">Sorry Stock Not Available in Your Location .</p>
 								{{-- @else --}}
-									{{-- <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold disabled:opacity-70" disabled>Add to cart</button>
-									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold opacity-70">
+									{{-- <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold disabled:opacity-70" disabled>Add to cart</button>
+									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold opacity-70">
 										<i class="fa fa-heart-o"></i>
 									</a>  --}}
 								{{-- @endif --}}
 							@else
 {{--								@if (\Auth::guard('customer')->user()->checkout_preference == "delivery")--}}
 {{--									@if ($product_detail->Fullprice->delivery_pack > 0 || $product_detail->Fullprice->delivery_single > 0 )--}}
-{{--										<button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>--}}
-{{--										<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>--}}
+{{--										<button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>--}}
+{{--										<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>--}}
 {{--									@else--}}
 {{--										<p class="text-red w-full">Sorry, product price not configured.</p>--}}
 {{--									@endif--}}
 {{--								@else--}}
 {{--								@if ($product_detail->Fullprice->p_price > 0 || $product_detail->Fullprice->price > 0 )--}}
-{{--									<button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>--}}
-{{--									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>--}}
+{{--									<button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>--}}
+{{--									<a href="{{route('add-to-wishlist',$product_detail->slug)}}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>--}}
 {{--								@else--}}
 {{--									<p class="text-red w-full">Sorry, product price not configured.</p>--}}
 {{--								@endif--}}
@@ -354,8 +354,8 @@
 								@if (\Auth::guard('customer')->user()->checkout_preference == "delivery")
 									@if ($product_detail->Fullprice)
 										@if ($product_detail->Fullprice->delivery_pack > 0 || $product_detail->Fullprice->delivery_single > 0)
-											<button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>
-											<a href="{{ route('add-to-wishlist', $product_detail->slug) }}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>
+											<button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>
+											<a href="{{ route('add-to-wishlist', $product_detail->slug) }}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>
 										@else
 											<p class="text-red w-full">Sorry, product price not configured.</p>
 										@endif
@@ -365,8 +365,8 @@
 								@else
 									@if ($product_detail->Fullprice)
 										@if ($product_detail->Fullprice->p_price > 0 || $product_detail->Fullprice->price > 0)
-											<button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>
-											<a href="{{ route('add-to-wishlist', $product_detail->slug) }}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>
+											<button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold">Add to cart</button>
+											<a href="{{ route('add-to-wishlist', $product_detail->slug) }}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold"><i class="fa fa-heart-o"></i></a>
 										@else
 											<p class="text-red w-full">Sorry, product price not configured.</p>
 										@endif
@@ -499,7 +499,7 @@
 							<!-- Start Single Product -->
 							<div class="swiper-slide flex flex-column justify-center">
 								@include('frontend.layouts.product')
-								{{-- <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[15px] group">
+								{{-- <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[15px] group">
 									<div class="mb-[15px] relative w-full min-h-[150px]">
 										<a href="{{route('product-detail',$data->slug)}}">
 											@php
@@ -509,7 +509,7 @@
 										</a>
 									</div>
 									<div class="text-center">
-										<h3><a href="{{route('product-detail',$data->slug)}}" class="hover:text-[#ce1212] font-bold mb-[5px]">{{$data->name}}</a></h3>
+										<h3><a href="{{route('product-detail',$data->slug)}}" class="hover:text-[#706233] font-bold mb-[5px]">{{$data->name}}</a></h3>
 										<div class="text-[14px] font-medium py-[5px] truncate">Product Code: <strong>{{ $data->ms_id }}</strong></div>
 										<div class="text-[14px] font-medium py-[5px] truncate">Package Size:  <strong>{{ $data->pack_size }}</strong></div>
 										<div class="text-[14px] font-medium py-[5px] truncate">Pack Price:  <strong>£{{ ($data->p_price)?$data->p_price:0 }}</strong></div>
@@ -525,14 +525,14 @@
 											<input type="hidden" name="home" value="singular">
 											@if ($data->price > 0 && $data->p_price <= 0)
 											@if (Helper::checkWarehouseOfProduct($data->id,\Auth::guard('customer')->user()->warehouse))
-												<button class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white" type="submit">Add to Cart</button>
+												<button class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white" type="submit">Add to Cart</button>
 											@else
-												<a href="#" class="TWOHM bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">Out Of Stock</a>
+												<a href="#" class="TWOHM bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">Out Of Stock</a>
 											@endif
 											@else
-											<a href="{{ route('product-detail', $data->slug?? ' ') }}" class="bg-[#ce1212]/10 text-[#ce1212] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#ce1212] hover:text-white">See Details</a>
+											<a href="{{ route('product-detail', $data->slug?? ' ') }}" class="bg-[#706233]/10 text-[#706233] p-[8px_15px] rounded-[50px] text-[14px] hover:bg-[#706233] hover:text-white">See Details</a>
 											@endif
-											<a href="{{ route('product-detail', $data->slug?? ' ') }}" class="bg-[#ce1212]/10 hover:bg-[#ce1212] hover:text-white text-[#ce1212] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center ml-auto">
+											<a href="{{ route('product-detail', $data->slug?? ' ') }}" class="bg-[#706233]/10 hover:bg-[#706233] hover:text-white text-[#706233] p-[10px_15px] rounded-[50%] w-[32px] h-[32px] flex items-center justify-center ml-auto">
 											<i class="fa fa-eye  text-[14px]" aria-hidden="true"></i>
 											</a>
 										</div>
@@ -546,10 +546,10 @@
 					@endforeach
 				</div>
 			</div>
-			<div class="swiper-button-prev single-button-prev after:content-[''] w-[40px] h-[40px] rounded-full bg-[#ce1212]/10 transition duration-500 top-[22px] right-12 left-[unset]">
+			<div class="swiper-button-prev single-button-prev after:content-[''] w-[40px] h-[40px] rounded-full bg-[#706233]/10 transition duration-500 top-[22px] right-12 left-[unset]">
 				<i class="fa fa-angle-left text-black text-[22px]" aria-hidden="true"></i>
 			</div>
-			<div class="swiper-button-next single-button-next after:content-[''] w-[40px] h-[40px] rounded-full bg-[#ce1212]/10 transition duration-500 top-[22px] right-0">
+			<div class="swiper-button-next single-button-next after:content-[''] w-[40px] h-[40px] rounded-full bg-[#706233]/10 transition duration-500 top-[22px] right-0">
 				<i class="fa fa-angle-right text-black text-[22px]" aria-hidden="true"></i>
 			</div>
 		</div>

@@ -8,14 +8,14 @@
     <input type="hidden" id="env_variable" value="{{ $env }}" />
     <input type="hidden" id="env_url" value="{{ $url }}" />
     <input type="hidden" id="user_id" value="{{ $user->ms_number }}" />
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Checkout</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Checkout</li>
 						</ol>
 					</nav>
 				</div>
@@ -48,7 +48,7 @@
                             <div class="lg:col-span-12 md:col-span-12 !mt-6 pickup_section">
                                 <div class="lg:col-span-6 md:col-span-6 pickup_timer">
                                     <label><strong>Collection Date</strong></label>
-                                    <input type="text" class="w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="date" name="pick_date" placeholder="Select Collection Date" min="<?php echo date("Y-m-d"); ?>">
+                                    <input type="text" class="w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="date" name="pick_date" placeholder="Select Collection Date" min="<?php echo date("Y-m-d"); ?>">
                                     @error('pick_date')
                                         <span class='text-red'>{{$message}}</span>
                                     @enderror
@@ -63,7 +63,7 @@
                         </div>
                     </div>
                     <div class="lg:col-span-4 ">
-                        <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[20px]">
+                        <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[20px]">
                             @php
                                 $total_amount=Helper::totalCartPrice();
                                 $vat= Helper::totalCartVatPrice();
@@ -77,22 +77,22 @@
                             <div class="flex flex-col gap-3">
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] delivery_option" for="cod">
                                     <input name="payment_method" id="cod" class="absolute opacity-0 z-[0] peer" type="radio" value="cod" required />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Delivery (Total: £{{ $amount_on_delivery }})
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] selfpickup_option" for="self">
                                     <input name="payment_method" id="self" class="absolute opacity-0 z-[0] peer" type="radio" value="self" checked="checked" />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Self Pick (Total: £{{ $total_amount }})
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] delivery_option" for="cod">
                                     <input name="payment_method" id="cod" class="absolute opacity-0 z-[0] peer" type="radio" value="cod" required />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Delivery
                                 </label>
                                 <label class="flex items-center cursor-pointer relative text-black text-[16px] selfpickup_option" for="self">
                                     <input name="payment_method" id="self" class="absolute opacity-0 z-[0] peer" type="radio" value="self" checked="checked" />
-                                    <span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
+                                    <span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>
                                     Self Pick
                                 </label>
                             </div> --}}
@@ -138,9 +138,9 @@
                                 </ul>
                             </div>
                             <!--/ End Order Widget -->
-                            <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6" style="display:none;" id="proceed_to_checkout">Pay In Store</button>
-                            {{-- <span id="proceed_payment" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
-                             <span id="pay_in_store" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Proceed To Payment</span>
+                            <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6" style="display:none;" id="proceed_to_checkout">Pay In Store</button>
+                            {{-- <span id="proceed_payment" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
+                             <span id="pay_in_store" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Proceed To Payment</span>
                         </div>
                     </div>
                 </div>
@@ -191,17 +191,17 @@
         <div class="modal-content">
             <div class="modal-header">
             <h1 class="modal-title fs-5" id="new_address_modalLabel">Shipping Address 2</h1>
-            <button type="button" class="btn-close bg-[#ce1212] text-white" data-bs-dismiss="modal" aria-label="Close">
+            <button type="button" class="btn-close bg-[#706233] text-white" data-bs-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
-                <input class="mb-2 w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="apartment" placeholder="Apartment#\House#"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="street" placeholder="Street"/>
+                <input class="mb-2 w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]" id="address_modal" placeholder="Address"/>
             </div>
             <div class="modal-footer">
-            <button id="change_shipping" type="button" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
+            <button id="change_shipping" type="button" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Save changes</button>
             </div>
         </div>
         </div>

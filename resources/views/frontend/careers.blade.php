@@ -10,7 +10,7 @@
                     <div class="lg:w-6/12 cursor-pointer">
                         <div class="card p-[20px] border">
                             <div class="text-center">
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" class="w-[200px] mx-auto">
+                                <img src="{{ asset('frontend/img/demo.png')}}" class="w-[200px] mx-auto">
                             </div>
                             <h4 class="font-semibold text-[22px] mt-3 mb-2">Credit Controller</h4>
                             <div>
@@ -25,7 +25,7 @@
                                 </p>
                                 <br>
                                 <div class="text-center">
-                                    <a href="application-form.php" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block mx-auto">
+                                    <a href="application-form.php" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold inline-block mx-auto">
                                     Apply Now
                                     </a>
                                 </div>

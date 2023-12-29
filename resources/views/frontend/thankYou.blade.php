@@ -3,14 +3,14 @@
 @section('main-content')
 
 <!-- Breadcrumbs -->
-<div class="w-full bg-[#ce1212]/10 py-[15px]">
+<div class="w-full bg-[#706233]/10 py-[15px]">
     <div class="!container px-6 mx-auto">
         <div class="flex items-center">
             <div class="grow">
                 <nav>
                     <ol class="flex items-center">
                         <li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-                        <li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Thank You</li>
+                        <li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Thank You</li>
                     </ol>
                 </nav>
             </div>

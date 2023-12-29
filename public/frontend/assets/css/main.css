@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary: #ce1212;
+  --color-primary: #706233;
   --color-secondary: #37373f;
 }
 
@@ -877,7 +877,7 @@ section {
 }
 .searchicon {
   border: none;
-  background: #ce1212;
+  background: #706233;
   padding: 8px 30px;
   position: absolute;
 }
@@ -1783,7 +1783,7 @@ section {
 }
 .single-product .product-content h3{
   text-align: center;
-  color: #ce1212;
+  color: #706233;
 }
 .product-area .single-product a img {
   width: 70%;

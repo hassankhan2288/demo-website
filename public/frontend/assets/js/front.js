@@ -97,7 +97,7 @@ $(document).ready(function () {
             div.appendChild(close);
 
             const textarea = document.createElement('textarea');
-            textarea.classList.add('w-full', '!border', '!border-[#ce1212]/10', 'hover:border-[#ce1212]/50', '!outline-0', 'rounded-[5px]', 'p-[8px_15px]','disabled', 'newAddress');
+            textarea.classList.add('w-full', '!border', '!border-[#706233]/10', 'hover:border-[#706233]/50', '!outline-0', 'rounded-[5px]', 'p-[8px_15px]','disabled', 'newAddress');
             textarea.setAttribute('name', 'address3');
             textarea.setAttribute('id','dynamic_textarea');
             textarea.setAttribute('placeholder', '');
@@ -490,7 +490,7 @@ $(document).ready(function () {
                         $(".slots_container_hm").empty();
                         const slotsContainer = document.getElementById("slots-container");
                         const select = document.createElement("select");
-                        select.setAttribute("class", "w-full !border !border-[#ce1212]/10 hover:border-[#ce1212]/50 !outline-0 rounded-[5px] p-[8px_15px]");
+                        select.setAttribute("class", "w-full !border !border-[#706233]/10 hover:border-[#706233]/50 !outline-0 rounded-[5px] p-[8px_15px]");
                         select.setAttribute("name", "pick_time");
                         select.setAttribute("id", "pick_time");
                         const slots = JSON.parse(result);
@@ -513,7 +513,7 @@ $(document).ready(function () {
                         //     input.setAttribute("value", slot);
 
                         //     const span = document.createElement("span");
-                        //     span.setAttribute("class", "peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]");
+                        //     span.setAttribute("class", "peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]");
 
                         //     const text = document.createTextNode(slot);
 
@@ -529,7 +529,7 @@ $(document).ready(function () {
                     // for (let i = 0; i < result.length; i++) {
                     // 	html += '<label class="flex items-center cursor-pointer relative text-black text-[16px]" for="flexRadioDefault2'+result[i]+'" value="'+result[i]+'">';
                     // 	html += '<input class="absolute opacity-0 z-[0] peer" type="radio" id="flexRadioDefault2'+result[i]+'" name="pick_time" />';
-                    // 	html += '<span class="peer-checked:bg-[#ce1212] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#ce1212] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>';
+                    // 	html += '<span class="peer-checked:bg-[#706233] shadow-[inset_0px_0px_0px_3px_white] border-2 border-[#706233] w-[18px] h-[18px] inline-block mr-2 rounded-full shrink-0 z-[10]"></span>';
                     // 	html += result[i]+ '</label></div></div>';
                     // }
                     // $( "#warehouse_id" ).after( html );

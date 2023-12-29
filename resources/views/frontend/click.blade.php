@@ -7,14 +7,14 @@
   <main id="main">
 
     <!-- Breadcrumbs -->
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
       <div class="!container px-6 mx-auto">
           <div class="flex items-center">
               <div class="grow">
                   <nav>
                       <ol class="flex items-center">
                           <li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-                          <li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Click & Collect</li>
+                          <li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Click & Collect</li>
                       </ol>
                   </nav>
               </div>
@@ -26,14 +26,14 @@
     </div>
 
     <!-- Brand start -->
-    <section class="overlay_class py-[60px] relative before:absolute before:inset-0 before:content-[''] before:bg-[#ce1212]/20 before:z-[1] group">
+    <section class="overlay_class py-[60px] relative before:absolute before:inset-0 before:content-[''] before:bg-[#706233]/20 before:z-[1] group">
       <img src="{{image_url('storage/red-bg.jpg')}}" class="w-full h-full object-cover absolute inset-0">
       <div class="!container !px-6 mx-auto relative z-[2]">
        <div class="custom_add_cart">
         <div class="relative">
-					<input type="text" name="email" id="emailsubs" placeholder="" value="Place Your Order Now" disabled class="w-full bg-white p-[15px_150px_15px_20px] rounded-[50px] !border !border-[#ce1212]" required="" data-gtm-form-interact-field-id="0">
+					<input type="text" name="email" id="emailsubs" placeholder="" value="Place Your Order Now" disabled class="w-full bg-white p-[15px_150px_15px_20px] rounded-[50px] !border !border-[#706233]" required="" data-gtm-form-interact-field-id="0">
 					<i class="fa fa-arrow-right" aria-hidden="true"></i>
-					<a href="{{ route('product-grids') }}" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold absolute right-[7px] top-[7px]" type="submit">Order Now</a>
+					<a href="{{ route('product-grids') }}" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold absolute right-[7px] top-[7px]" type="submit">Order Now</a>
 				</div>
        </div>
       </div>

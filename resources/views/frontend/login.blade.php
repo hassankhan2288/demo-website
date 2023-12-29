@@ -2,14 +2,14 @@
 @section('title','Cater-Choice || Login Page')
 @section('main-content')
 <main>
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="/">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Login</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Login</li>
 						</ol>
 					</nav>
 				</div>
@@ -40,7 +40,7 @@
                 @endif
                 @csrf
                 <div class="mb-[20px]">
-                    <input id="email" type="email" placeholder="Email Address" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                    <input id="email" type="email" placeholder="Email Address" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                     @error('email')
                         <span class="text-red" role="alert">
                             <strong>{{ $message }}</strong>
@@ -48,7 +48,7 @@
                     @enderror
                 </div>
                 <div class="mb-[20px]">
-                    <input id="password" type="password" placeholder="Password" class="p-[8px_15px] rounded-[4px] !border !border-[#ce1212]/10 w-full focus:border-[#ce1212]/30 focus-visible:!border-[#ce1212]/30 focus-visible:outline-0 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    <input id="password" type="password" placeholder="Password" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
                     @error('password')
                         <span class="text-red" role="alert">
                             <strong>{{ $message }}</strong>
@@ -65,9 +65,9 @@
                     <a href="{{route('reset-user-password')}}" class="reset_pass_link">Forgot Password?</a>
                 </div>
 
-                <button class="p-[10px_30px] w-full rounded-full text-white bg-[#ce1212]">{{ __('Login') }}</button>
+                <button class="p-[10px_30px] w-full rounded-full text-white bg-[#706233]">{{ __('Login') }}</button>
                 <div class="text-center mt-[15px]">
-                    <a href="{{ route('customer.register') }}" class="text-[16px] hover:text-[#ce1212]"> Sign up for an account</a>
+                    <a href="{{ route('customer.register') }}" class="text-[16px] hover:text-[#706233]"> Sign up for an account</a>
                 </div>
             </form>
         </div>

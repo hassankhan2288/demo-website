@@ -9,7 +9,7 @@
                         <div class="card h-100 p-30" style="">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                                 <h4 class="" style="background:;color: black;font-weight: normal;width: 100%;font-size: 22px"><center>BRADFORD (H.Q)</center></h4>
                             <div>
@@ -31,7 +31,7 @@
                         <div class="card h-100 p-30">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                                 <h4 class="" style="color: black;font-weight: normal;width: 100%;font-size: 22px"><center>LEEDS</center></h4>
                             <div>
@@ -53,7 +53,7 @@
                         <div class="card h-100 p-30" style="">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                                 <h4 class="" style="background:;color: black;font-weight: normal;width: 100%;font-size: 22px"><center>SHEFFIELD </center></h4>
                             <div>
@@ -75,7 +75,7 @@
                         <div class="card h-100 p-30">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                                 <h4 class="" style="background:;color: black;font-weight: normal;width: 100%;font-size: 22px"><center>BOLTON</center></h4>
                             <div>
@@ -97,7 +97,7 @@
                         <div class="card h-100 p-30" style="">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                             <h4 class="" style="background:;color: black;font-weight: normal;width: 100%;font-size: 22px"><center>BIRMINGHAM</center></h4>
                             <div>
@@ -119,7 +119,7 @@
                         <div class="card h-100 p-30" style="">
                             <div class="card-body">
                             <center>
-                                <img src="{{ asset('frontend/img/cater-logo.png')}}" style="width: 80%;">
+                                <img src="{{ asset('frontend/img/demo.png')}}" style="width: 80%;">
                             </center>
                                 <h4 class="" style="background:;color: black;font-weight: normal;width: 100%;font-size: 22px"><center>DELIVERY SERVICE</center></h4>
                             <div>

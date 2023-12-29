@@ -26,7 +26,7 @@
 </head>
 <body class="m-4">
 	<div class="d-flex justify-content-center">
-        <img src="{{asset('frontend/assets/img/cater-logo.png')}}" class="sm:w-[170px] w-[150px]" alt="">
+        <img src="{{asset('frontend/assets/img/demo.png')}}" class="sm:w-[170px] w-[150px]" alt="">
     </div>
 
 	<div id="demo-payment"></div>

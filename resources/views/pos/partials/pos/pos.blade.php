@@ -10,12 +10,12 @@
         </div>
     @endforeach
     @endif
-<div class="w-full px-[20px] py-[10px] flex flex-wrap gap-5 justify-between bg-[#ce1212] items-center relative z-40 min-h-[70px]">
+<div class="w-full px-[20px] py-[10px] flex flex-wrap gap-5 justify-between bg-[#706233] items-center relative z-40 min-h-[70px]">
     <div class="customer-logo">
       <img src="{{asset('img/logo.png')}}" target="blank" alt="" class="w-[100px]">
     </div>
     <div class="xl:block hidden ml-auto">
-      <ul class="bg-[#ce1212] flex items-center">
+      <ul class="bg-[#706233] flex items-center">
         <li>
           <a href="{{route('pos.dashboard')}}" class="2xl:text-[16px] !2xl:px-[16px] text-white !px-[12px] text-[12px]">
             Dashboard
@@ -70,7 +70,7 @@
 
 <div x-show="mobileMenu" :class="{ '!flex': mobileMenu }" x-on:click="mobileMenu = false" style="overflow: scroll;" class="fixed glass hidden w-full h-screen left-0 top-0 z-40 flex flex-wrap justify-center content-center sm:p-24 p-6">
     <div x-on:click.stop="" style=" min-height: -webkit-fill-available;" class="xl:w-1/2 sm:w-96 w-full sm:p-8 p-6 bg-white shadow-xl relative">
-      <span x-on:click="mobileMenu = false" class="w-[40px] cursor-pointer h-[40px] rounded-full shadow-lg text-white text-[20px] !absolute -right-5 -top-5 bg-[#ce1212] flex items-center justify-center">
+      <span x-on:click="mobileMenu = false" class="w-[40px] cursor-pointer h-[40px] rounded-full shadow-lg text-white text-[20px] !absolute -right-5 -top-5 bg-[#706233] flex items-center justify-center">
         <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
       </span>
       <div class="text-center">
@@ -131,7 +131,7 @@
 <div class="hide-print flex flex-row md:flex-nowrap flex-wrap h-[calc(100vh-71px)] antialiased text-blue-gray-800">
   <!-- left sidebar -->
   <div class="flex flex-row md:w-auto w-full flex-shrink-0 md:pl-4 pl-2 pr-2 py-4">
-    <div class="flex md:flex-col items-center py-4 flex-shrink-0 md:w-20 w-full bg-[#ce1212] rounded-3xl gap-5 md:justify-start justify-center">
+    <div class="flex md:flex-col items-center py-4 flex-shrink-0 md:w-20 w-full bg-[#706233] rounded-3xl gap-5 md:justify-start justify-center">
       <div role="status" x-show="loading">
         <svg aria-hidden="true" class="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
@@ -214,7 +214,7 @@
   <div class="flex-grow flex xl:flex-nowrap flex-wrap">
     <!-- store menu -->
     <div class="flex px-2 flex-row md:flex-nowrap flex-wrap relative  md:gap-2 gap-4 xl:hidden w-full md:mt-4">
-      <div class="absolute left-5 md:top-3 top-2 px-2 py-2 rounded-full bg-[#ce1212] text-white">
+      <div class="absolute left-5 md:top-3 top-2 px-2 py-2 rounded-full bg-[#706233] text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
@@ -240,7 +240,7 @@
     </div>
     <div class="flex flex-col bg-blue-gray-50 h-full w-full py-4 xl:order-1 order-2">
       <div class="px-2 flex-row relative gap-2 xl:flex hidden">
-        <div class="absolute left-5 top-3 px-2 py-2 rounded-full bg-[#ce1212] text-white">
+        <div class="absolute left-5 top-3 px-2 py-2 rounded-full bg-[#706233] text-white">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -337,7 +337,7 @@
               <div class="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-wrap items-center justify-between">
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" x-text="pause.name"></h5>
                 <div class="ml-auto">
-                  <button x-on:click="retakePause(pause)" type="button" class="text-white bg-[#ce1212] hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-blue-800">Resale</button>
+                  <button x-on:click="retakePause(pause)" type="button" class="text-white bg-[#706233] hover:bg-red-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-blue-800">Resale</button>
                   <button x-on:click="removePause(pause)" type="button" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800">Remove</button>
 
                 </div>
@@ -357,7 +357,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
-        <div x-show="getItemsCount() > 0" class="bg-change-400 text-center absolute bg-[#ce1212] text-white w-5 h-5 text-xs p-0 leading-5 rounded-full -right-2 top-3" x-text="getItemsCount()"></div>
+        <div x-show="getItemsCount() > 0" class="bg-change-400 text-center absolute bg-[#706233] text-white w-5 h-5 text-xs p-0 leading-5 rounded-full -right-2 top-3" x-text="getItemsCount()"></div>
       </div>
       <div class="flex-grow px-8 text-right text-lg py-4 relative">
         <!-- trash button -->
@@ -391,7 +391,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-              <div x-show="getItemsCount() > 0" class="text-center absolute bg-[#ce1212] text-white w-5 h-5 text-xs p-0 leading-5 rounded-full -right-2 top-3" x-text="getItemsCount()"></div>
+              <div x-show="getItemsCount() > 0" class="text-center absolute bg-[#706233] text-white w-5 h-5 text-xs p-0 leading-5 rounded-full -right-2 top-3" x-text="getItemsCount()"></div>
             </div>
             <div class="flex-grow px-8 text-right text-lg py-4 relative">
               <!-- trash button -->
@@ -493,13 +493,13 @@
             </div> -->
           <div class="flex flex-row justify-center gap-2">
             <button class="text-white rounded-2xl text-lg w-full py-3 focus:outline-none" x-bind:class="{
-                'bg-[#ce1212] hover:bg-red-600': submitable(),
+                'bg-[#706233] hover:bg-red-600': submitable(),
                 'bg-red-gray-200': !submitable()
               }" :disabled="!submitable()" x-on:click="submit(false)">
               Checkout
             </button>
             <button class="text-white rounded-2xl text-lg w-full py-3 focus:outline-none" x-bind:class="{
-                'bg-[#ce1212] hover:bg-red-600': submitable(),
+                'bg-[#706233] hover:bg-red-600': submitable(),
                 'bg-red-gray-200': !submitable()
               }" :disabled="!submitable()" x-on:click="popupOpen()">
               On Hold
@@ -653,7 +653,7 @@
       </div>
       <div class="p-4 w-full">
 
-        <button class="bg-[#ce1212] text-white text-lg px-4 py-3 rounded-2xl w-full focus:outline-none" x-on:click="printAndProceed()">
+        <button class="bg-[#706233] text-white text-lg px-4 py-3 rounded-2xl w-full focus:outline-none" x-on:click="printAndProceed()">
           <div role="status" x-show="isSubmitting">
             <svg aria-hidden="true" class="mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />

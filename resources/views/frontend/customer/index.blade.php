@@ -4,14 +4,14 @@
 
 <main>
   <!-- Breadcrumbs -->
-  <div class="w-full bg-[#ce1212]/10 py-[15px]">
+  <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{route('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Dashboard</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Dashboard</li>
 						</ol>
 					</nav>
 				</div>
@@ -27,8 +27,8 @@
     <div class="!container px-6 mx-auto">
       <div class="grid md:grid-cols-12 grid-cols-1 gap-4">
         <div class="lg:col-span-3 md:col-span-4">
-          <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] overflow-hidden">
-            <a href="{{route('customer.dashboard')}}" class="bg-[#ce1212] text-white p-[15px] block border-b"> <i class="fa fa-tachometer text-[16px] mr-[5px]"></i>  Dashboard</a>
+          <div class="bg-white !border !border-[#706233]/10 rounded-[5px] overflow-hidden">
+            <a href="{{route('customer.dashboard')}}" class="bg-[#706233] text-white p-[15px] block border-b"> <i class="fa fa-tachometer text-[16px] mr-[5px]"></i>  Dashboard</a>
             <a href="{{route('customer.profile')}}" class="bg-white p-[15px] block border-b"> <i class="fa fa-user text-[16px] mr-[5px]"></i>   Profile</a>
             <a href="{{route('customer.orders')}}" class="bg-white p-[15px] block border-b"> <i class="fa fa-table text-[16px] mr-[5px]"></i>  Orders</a>
             {{-- <a href="{{ route('customer.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="bg-white p-[15px] block"> <i class="fa fa-sign-in text-[16px] mr-[5px]"></i> {{ __('Logout') }}</a> --}}
@@ -41,7 +41,7 @@
 
         <!-- Home Section Starts Here-->
           <div class="lg:col-span-9 md:col-span-8">
-            <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[20px]">
+            <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[20px]">
               <ul>
                 <li class="">
                   <div class="float-left avatar-upload mr-5">
@@ -74,8 +74,8 @@
                 </li>
               </ul>
               <div class="col-md-12 flex items-center">
-                <a href="{{url('cart')}}" class="text-[#ce1212] hover:text-[#ce1212] text-[20px]">
-                  <i class="fa fa-shopping-cart text-[#ce1212]"></i>
+                <a href="{{url('cart')}}" class="text-[#706233] hover:text-[#706233] text-[20px]">
+                  <i class="fa fa-shopping-cart text-[#706233]"></i>
                   <span class="text-[20px] ml-1">Go to Cart</span>
                 </a>
               </div>

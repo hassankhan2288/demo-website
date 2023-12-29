@@ -7,14 +7,14 @@
     <!-- Breadcrumbs -->
     <input type="hidden" id="checkout_url" value="{{ route('checkout') }}" />
     <input type="hidden" id="thankYou_url" value="{{ route('thankYou') }}" />
-    <div class="w-full bg-[#ce1212]/10 py-[15px]">
+    <div class="w-full bg-[#706233]/10 py-[15px]">
 		<div class="!container px-6 mx-auto">
 			<div class="flex items-center">
 				<div class="grow">
 					<nav>
 						<ol class="flex items-center">
 							<li class="list-unstyled"><a href="{{('home')}}">Home </a></li>
-							<li class="list-unstyled text-[#ce1212] ml-1" aria-current="page"> / Payment</li>
+							<li class="list-unstyled text-[#706233] ml-1" aria-current="page"> / Payment</li>
 						</ol>
 					</nav>
 				</div>
@@ -98,7 +98,7 @@
                                 @endforeach --}}
                                 <input type="hidden" name="reference_no" value="{{ $reference_no }}" />
                                 <input type="hidden" name="paymensense_token" value="{{ $payment_sense_token }}" />
-                            <div class="bg-white !border !border-[#ce1212]/10 rounded-[5px] p-[20px]">
+                            <div class="bg-white !border !border-[#706233]/10 rounded-[5px] p-[20px]">
                                 @php
                                     $total_amount=Helper::totalCartPriceOfOrder($order_id);
                                     $vat= Helper::totalCartVatPriceOfOrder($order_id);
@@ -146,9 +146,9 @@
                                     </ul>
                                 </div>
                                 <!--/ End Order Widget -->
-                                <button type="submit" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6" style="display:none;" id="proceed_to_checkout">Pay In Store</button>
-                                {{-- <span id="proceed_payment" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
-                                {{--<span id="pay_in_store" class="bg-[#ce1212] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay in-store</span>--}}
+                                <button type="submit" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6" style="display:none;" id="proceed_to_checkout">Pay In Store</button>
+                                {{-- <span id="proceed_payment" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay By Card</span> --}}
+                                {{--<span id="pay_in_store" class="bg-[#706233] text-white p-[11px_30px] rounded-[50px] text-[14px] font-bold w-full mt-6">Pay in-store</span>--}}
                             </div>
                         </form>
                     </div>

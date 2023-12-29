@@ -1,6 +1,6 @@
 <div class="js-cookie-consent cookie-consent fixed bottom-0 inset-x-0 pb-2">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="p-2 rounded-lg bg-[#ce1212] ">
+        <div class="p-2 rounded-lg bg-[#706233] ">
             <div class="flex items-center justify-between flex-wrap">
                 <div class="flex-1 items-center">
                     <p class="ml-3 text-white cookie-consent__message">
