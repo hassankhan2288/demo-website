@@ -1,0 +1,73 @@
+.src-common-components-notifications-index__root--2IRDy {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  margin: auto;
+  margin-top: 3%;
+  font-size: 14px;
+  font-weight: 500;
+  z-index: 10000;
+}
+
+.src-common-components-notifications-index__notification--2JCmp {
+  display: flex;
+  align-items: center;
+  max-width: 670px;
+  padding: 12px;
+  margin: 14px;
+  border: 1px solid var(--alto);
+  border-radius: 3px;
+  color: var(--mine-shaft);
+  background: var(--white);
+  box-shadow: 0 1px 4px rgba(35, 35, 35, 0.1);
+  animation: src-common-components-notifications-index__notificationAppearMove--3LOCd 0.2s;
+}
+
+.src-common-components-notifications-index__iconClose--2yt82 {
+  align-self: flex-start;
+  margin-left: 40px;
+  background: none;
+  cursor: pointer;
+}
+
+.src-common-components-notifications-index__icon--FzRuf {
+  align-self: flex-start;
+  margin-right: 9px;
+}
+
+.src-common-components-notifications-index__icon--FzRuf path {
+  fill: var(--primary-dark);
+}
+
+.src-common-components-notifications-index__icon--FzRuf.src-common-components-notifications-index__success--2tFY1 path {
+  fill: var(--success);
+}
+
+.src-common-components-notifications-index__icon--FzRuf.src-common-components-notifications-index__error--1MQV1 path {
+  fill: var(--error);
+}
+
+.src-common-components-notifications-index__icon--FzRuf.src-common-components-notifications-index__warning--j-FoL path {
+  fill: var(--warning);
+}
+
+.src-common-components-notifications-index__icon--FzRuf.src-common-components-notifications-index__info--3dcfj path {
+  fill: var(--primary-dark);
+}
+
+@keyframes src-common-components-notifications-index__notificationAppearMove--3LOCd {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+

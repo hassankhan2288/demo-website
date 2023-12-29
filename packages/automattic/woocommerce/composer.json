@@ -1,0 +1,19 @@
+{
+    "name": "automattic/woocommerce",
+    "description": "api access",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yasir Naeem",
+            "email": "yasirnaeem@outlook.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Automattic\\WooCommerce\\": "src/"
+        }
+    },
+    "require": {}
+}

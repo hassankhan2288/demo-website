@@ -1,0 +1,98 @@
+
+.logo-container{
+    width: 100px;
+}
+.logo-container > img{
+    width: 100%;
+}
+
+.main-container {
+    margin-top: 65px;
+}
+
+.form-container{
+    max-width: 600px;
+    margin: 10px auto;
+}
+.form-container h1{
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.my_bold {
+    font-weight: 800 !important;
+  }
+  .text_black {
+    color: black !important;
+  }
+  .text_black.active {
+    color: white !important;
+  }
+  .text_black{
+    font-size: medium !important;
+  }
+  .branch_text{
+    font-size: 30px !important;
+
+  }
+  .short_hr {
+    width: 30%;
+    margin-top: -12px; 
+    border: none;
+    height: 1px;
+    background-color: #000; 
+}
+
+.dropzone {
+    border: 1px dashed #ced4da;
+    border-radius: 5px;
+    background: white;
+}
+#imageUpload{
+    margin-bottom: 20px;
+    min-height: 80px;
+}
+
+div.has-error > input {
+    border: 1px solid #dc3545;
+}
+
+div.has-error> .form-text {
+    color: #dc3545;
+}
+
+#successModal .fa-thumbs-up {
+    font-size: 7.5rem;
+    color: #2ebf2e;
+}
+
+#successModal .fa-thumbs-down {
+    font-size: 7.5rem;
+    color: #e13535;
+}
+
+#success-text{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.btn-group {
+margin-left: 23%;
+}
+
+.dataTables_filter{
+    margin-left: 17%;
+}
+
+/**Added By Hassan Mateen -- Start***/
+
+.checkbox input, .radio input{
+    position: unset !important;
+    opacity: 1 !important;
+    cursor: pointer;
+    height: inherit !important;
+    width: inherit !important;
+}
+.p-10{
+    padding: 10px !important;
+}
+/**Added By Hassan Mateen -- END***/

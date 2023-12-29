@@ -1,0 +1,11 @@
+ALTER TABLE `categories` ADD `is_menu` INT(1) NULL DEFAULT NULL AFTER `status`; 
+INSERT INTO `categories` (`id`, `name`, `code`, `image`, `parent_id`, `is_active`, `status`, `is_menu`, `created_at`, `updated_at`) VALUES (NULL, 'Latest Products', NULL, NULL, NULL, NULL, 'active', NULL, NULL, NULL);
+ALTER TABLE `wishlists` ADD `preference` VARCHAR(222) NULL DEFAULT NULL AFTER `amount`; 
+ALTER TABLE `wishlists` ADD `type` VARCHAR(222) NULL DEFAULT NULL AFTER `preference`; 
+
+26 octber db changes
+ALTER TABLE `product_pricing_managements` CHANGE `sale_price` `p_price` DOUBLE NULL DEFAULT NULL ; 
+ALTER TABLE `product_pricing_managements` ADD `price` DOUBLE NULL DEFAULT NULL AFTER `cate`; 
+ALTER TABLE `product_pricing_managements` ADD `product_ms_id` VARCHAR(222) NULL DEFAULT NULL AFTER `product_id`; 
+ALTER TABLE `sales` ADD `delivery_date` DATE NULL DEFAULT NULL AFTER `pick_date`; 
+ALTER TABLE `sales` ADD `order_type` VARCHAR(222) NULL DEFAULT NULL AFTER `status`; 

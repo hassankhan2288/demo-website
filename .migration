@@ -1,0 +1,21 @@
+php artisan migrate --path=/database/migrations/2022_12_21_092459_create_settings_table.php
+
+php artisan migrate --path=/database/migrations/2023_01_15_181821_add_favorite_to_product_pricing_managements_table.php
+
+php artisan migrate --path=/database/migrations/2023_01_09_060412_create_customer_categories_table.php
+
+
+php artisan migrate --path=/database/migrations/2023_02_14_101619_create_stock_table.php
+
+php artisan migrate --path=/database/migrations/2023_02_19_143951_add_ms_item_id_to_product_table.php
+
+php artisan migrate --path=/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php
+
+
+# Command related to microsoft dynamic
+
+list:customer
+update:branch
+update:customer
+update:price
+update:location

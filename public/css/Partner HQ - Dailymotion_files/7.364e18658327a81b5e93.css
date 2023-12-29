@@ -1,0 +1,158 @@
+.src-routes-analytics-components-filter-menu-index__menu--27tho {
+  width: 320px
+}
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-dropdown-menu-item:hover,
+  .src-routes-analytics-components-filter-menu-index__menu--27tho .ant-dropdown-menu-submenu-title:hover {
+    background-color: transparent;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__checked--3A9Dc {
+    visibility: hidden;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    color: var(--primary);
+    background: var(--white);
+    font-weight: 500
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected .src-routes-analytics-components-filter-menu-index__checked--3A9Dc {
+      margin-right: 0;
+      color: var(--primary);
+      visibility: visible
+    }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected .src-routes-analytics-components-filter-menu-index__checked--3A9Dc path {
+        fill: var(--primary);
+      }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__submenu--KOYWf {
+    border-right: 0;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__tabMenu--2QCuv {
+    margin: 0 -24px;
+    border-top: 1px solid var(--mercury);
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-dropdown-menu-item {
+    padding: 12px 24px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__searchMenuItem--3Oo1o {
+    padding: 20px 24px 12px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__menuItem--3SekR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--smokey-black);
+    font-size: 14px
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__menuItem--3SekR.src-routes-analytics-components-filter-menu-index__allItems--3ZKkK {
+      margin-top: -13px;
+      border-bottom: 1px solid var(--mercury);
+    }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-menu-vertical .ant-menu-item {
+    padding: 0 24px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-nav .ant-tabs-tab,
+  .src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-nav .ant-tabs-tab:hover {
+    padding-right: 0;
+    padding-left: 0;
+    color: var(--silver);
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-nav .ant-tabs-tab:first-child {
+    margin-left: 24px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-nav .ant-tabs-tab-active,
+  .src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-nav .ant-tabs-tab-active:hover {
+    border-bottom: 4px solid var(--primary);
+    color: var(--smokey-black);
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__title--1-92S {
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__noResults--2ZrTW {
+    padding: 5px 16px;
+    color: var(--smokey-black);
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__channelItem--3BqR4,
+  .src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__videoItem--1Bws3 {
+    display: flex;
+    align-items: center;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__avatar--1xA09 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__videoAvatar--3_-tX {
+    width: 42px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .ant-tabs-ink-bar {
+    visibility: hidden;
+  }
+
+.src-routes-analytics-components-filter-menu-index__menu--27tho .src-routes-analytics-components-filter-menu-index__videoLoader--2Dhxr {
+    position: relative;
+    height: 50px;
+  }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--silver-chalice);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .ant-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    color: var(--smokey-black);
+    font-size: 28px;
+    font-weight: 900;
+    text-decoration: none
+  }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .ant-dropdown-trigger .src-routes-analytics-components-filter-menu-index__downArrow--3DIyI {
+      margin-left: 8px;
+      transform: rotate(270deg)
+    }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .ant-dropdown-trigger .src-routes-analytics-components-filter-menu-index__downArrow--3DIyI.src-routes-analytics-components-filter-menu-index__open--2mhQj {
+        transform: rotate(90deg);
+      }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .ant-dropdown-trigger .src-routes-analytics-components-filter-menu-index__downArrow--3DIyI path {
+        fill: var(--smokey-black);
+      }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .ant-dropdown-open .anticon-down svg {
+    transform: scaleY(-1);
+  }
+
+.src-routes-analytics-components-filter-menu-index__dropdown--2NbiD .src-routes-analytics-components-filter-menu-index__dropdownTitle--3ldl9 {
+    font: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
