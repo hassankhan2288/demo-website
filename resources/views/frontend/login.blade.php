@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Cater-Choice || Login Page')
+@section('title','Demo || Login Page')
 @section('main-content')
 <main>
     <div class="w-full bg-[#706233]/10 py-[15px]">

@@ -24,7 +24,7 @@ margin-left: 2%;">
 
         <div class="form-group">
           <label for="inputLink" class="col-form-label">Link</label>
-          <input class="form-control" id="link" name="link" value="{{old('link')}}" />
+          <input class="form-control required" id="link" name="link" value="{{old('link')}}" />
           @error('link')
           <span class="text-danger">{{$message}}</span>
           @enderror

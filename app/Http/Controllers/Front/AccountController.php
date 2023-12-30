@@ -96,41 +96,42 @@ class AccountController extends Controller
 
     public function registerCustomer(Request $request, MSDynamic $api)
     {
-        
+        // dd($request->all());
         $this->validate($request,[
             'name'=>'required',
             'email'=>'required|email:rfc|max:255',
             // 'address'=>'required',
-            'checkout_preference'=>'required|not_in:0',
+            // 'checkout_preference'=>'required|not_in:0',
             'phone_number' => 'required|min:11',
-            'postcode' => 'required',
+            // 'postcode' => 'required',
             'city' => 'required',
-            'business_name' => 'required',
-            'business_type' => 'required',
-            'warehouse'=>'required|not_in:0',
-            'password' => [
-                'required',
-                'confirmed',
-                Password::min(8)->mixedCase()->symbols()
-            ],
+            // 'business_name' => 'required',
+            // 'business_type' => 'required',
+            // 'warehouse'=>'required|not_in:0',
+            'password'=>'required|min:8|max:30',
+            // 'password' => [
+            //     'required',
+            //     'confirmed',
+            //     Password::min(8)->mixedCase()->symbols()
+            // ],
             // 'password'=>'required|min:6|max:30|confirmed',
             'password_confirmation' =>'required|same:password'
         ]);
-        $email = $request->email;
-        $user_check = Customer::where('email', $email)->first();
-        if($user_check){
-            request()->session()->flash('email','Email taken, please try another');
-            // return back()->with('email','Email taken, please try another');
-            return Redirect::back()->withErrors(['email' => 'Email taken, please try another']);
-        }
+        // $email = $request->email;
+        // $user_check = Customer::where('email', $email)->first();
+        // if($user_check){
+        //     request()->session()->flash('email','Email taken, please try another');
+        //     // return back()->with('email','Email taken, please try another');
+        //     return Redirect::back()->withErrors(['email' => 'Email taken, please try another']);
+        // }
         // dd($request->checkout_preference);
-        DB::beginTransaction();
+        // DB::beginTransaction();
         
-        $warehouse = Warehouse::find($request->warehouse);
+        // $warehouse = Warehouse::find($request->warehouse);
         $customer=new Customer;
-        if($request->profile_image){
-            $customer->profile_image = \Helper::upload_S3_image($request->profile_image,'public/images/','storage/images/profile_images/'); 
-        }
+        // if($request->profile_image){
+        //     $customer->profile_image = \Helper::upload_S3_image($request->profile_image,'public/images/','storage/images/profile_images/'); 
+        // }
         // $response = $customer->getAdressViaAPI($request->postcode);
         // if($response){
         //     $address = $response;
@@ -143,17 +144,17 @@ class AccountController extends Controller
         if(isset($request->address_2)){
             $customer->address_2 = $request->address_2;  
         }
-        $customer->warehouse = $request->warehouse;
+        // $customer->warehouse = $request->warehouse;
         $customer->phone_number = $request->phone_number;
         $customer->city = $request->city;
-        $customer->business_type = $request->business_type;
-        $customer->business_name = $request->business_name;
+        // $customer->business_type = $request->business_type;
+        // $customer->business_name = $request->business_name;
 
         $customer->postal_code = $request->postcode;
-        $customer->checkout_preference = ($request->checkout_preference)?$request->checkout_preference:'delivery';
+        // $customer->checkout_preference = ($request->checkout_preference)?$request->checkout_preference:'delivery';
 		$customer->password = Hash::make($request->password);
         $password = $customer->password;
-		
+		// dd($customer);
 		$customer->save();
         $user = $customer;
         //code by Hassan
@@ -163,88 +164,89 @@ class AccountController extends Controller
         $branch->email = $request->email;
         $branch->city = $request->city;
         $branch->password = $password;
-        $branch->business_type = $request->business_type;
-        $branch->business_name = $request->business_name;
-        $branch->warehouse = $request->warehouse;
-        $branch->checkout_preference = ($request->checkout_preference)?$request->checkout_preference:'delivery';
+        // $branch->business_type = $request->business_type;
+        // $branch->business_name = $request->business_name;
+        // $branch->warehouse = $request->warehouse;
+        // $branch->checkout_preference = ($request->checkout_preference)?$request->checkout_preference:'delivery';
         $branch->address = $request->address;
         $branch->phone = $request->phone_number;
         $branch->postal_code = $user->postcode;
         $branch->platform = 'Website';
+        // dd($branch);
         $branch->save();
 
-        switch ($warehouse->name) {
-            case 'BFD':
-                $salespersonCode = "BFD MANGR";
-                $resposibilityCenter = "BRADFORD";
-                $customerPriceGroup = "BFD CC";
-                break;
-            case 'BDC':
-                $salespersonCode = "BDC MANGR";
-                $resposibilityCenter = "JACKSON ST";
-                $customerPriceGroup = "BELLA PIZZ";
-                break;
-            case 'BOL':
-                $salespersonCode = "BOL MANGR";
-                $resposibilityCenter = "BOLTON";
-                $customerPriceGroup = "BOL CC";
-                break;
-            case 'DIS':
-                $salespersonCode = "DIST MANGR";
-                $resposibilityCenter = "JACKSON ST";
-                $customerPriceGroup = "DISTRIBUT";
-                break;
-            case 'LDS':
-                $salespersonCode = "LDS MANGR";
-                $resposibilityCenter = "LEEDS";
-                $customerPriceGroup = "LDS CC";
-                break;
-            case 'SHE':
-                $salespersonCode = "SHEFF MANG";
-                $resposibilityCenter = "JACKSON ST";
-                $customerPriceGroup = "SHEFFIELD";
-                break;
-            case 'BIR':
-                $salespersonCode = "BIR MANG";
-                $resposibilityCenter = "BIRG";
-                $customerPriceGroup = "BIR CC";
-                break;
-            default:
-                $salespersonCode = "LEEDS MANG";
-                $resposibilityCenter = "LEEDS";
-                $customerPriceGroup = "LDS CC";
-                break;
-        }
+        // switch ($warehouse->name) {
+        //     case 'BFD':
+        //         $salespersonCode = "BFD MANGR";
+        //         $resposibilityCenter = "BRADFORD";
+        //         $customerPriceGroup = "BFD CC";
+        //         break;
+        //     case 'BDC':
+        //         $salespersonCode = "BDC MANGR";
+        //         $resposibilityCenter = "JACKSON ST";
+        //         $customerPriceGroup = "BELLA PIZZ";
+        //         break;
+        //     case 'BOL':
+        //         $salespersonCode = "BOL MANGR";
+        //         $resposibilityCenter = "BOLTON";
+        //         $customerPriceGroup = "BOL CC";
+        //         break;
+        //     case 'DIS':
+        //         $salespersonCode = "DIST MANGR";
+        //         $resposibilityCenter = "JACKSON ST";
+        //         $customerPriceGroup = "DISTRIBUT";
+        //         break;
+        //     case 'LDS':
+        //         $salespersonCode = "LDS MANGR";
+        //         $resposibilityCenter = "LEEDS";
+        //         $customerPriceGroup = "LDS CC";
+        //         break;
+        //     case 'SHE':
+        //         $salespersonCode = "SHEFF MANG";
+        //         $resposibilityCenter = "JACKSON ST";
+        //         $customerPriceGroup = "SHEFFIELD";
+        //         break;
+        //     case 'BIR':
+        //         $salespersonCode = "BIR MANG";
+        //         $resposibilityCenter = "BIRG";
+        //         $customerPriceGroup = "BIR CC";
+        //         break;
+        //     default:
+        //         $salespersonCode = "LEEDS MANG";
+        //         $resposibilityCenter = "LEEDS";
+        //         $customerPriceGroup = "LDS CC";
+        //         break;
+        // }
         
-        $customers = [
-            'Name'=>$request->name,
-            'Name_2' => $request->name,
-            'Search_Name'=>$request->name,
-            'Address'=> $request->address,
-            'Address_2' => ($request->address_2)?$request->address_2:'',
-            'Country_Region_Code' => 'GB',
-            'E_Mail'=>$request->email,
-            'Phone_No'=>$request->phone_number,
-            'MobilePhoneNo' => $request->phone_number,
-            'City' => $request->city,
-            "ContactName" => $request->name,
-            "Gen_Bus_Posting_Group" => "DOMESTIC",
-            "VAT_Bus_Posting_Group" => "DOMESTIC",
-            "Customer_Posting_Group" => "DOMESTIC",
-            // 'country' => 'UK',
-            'Post_Code' => $request->postcode,
-            "Location_Code" =>  $warehouse->name,
+        // $customers = [
+        //     'Name'=>$request->name,
+        //     'Name_2' => $request->name,
+        //     'Search_Name'=>$request->name,
+        //     'Address'=> $request->address,
+        //     'Address_2' => ($request->address_2)?$request->address_2:'',
+        //     'Country_Region_Code' => 'GB',
+        //     'E_Mail'=>$request->email,
+        //     'Phone_No'=>$request->phone_number,
+        //     'MobilePhoneNo' => $request->phone_number,
+        //     'City' => $request->city,
+        //     "ContactName" => $request->name,
+        //     "Gen_Bus_Posting_Group" => "DOMESTIC",
+        //     "VAT_Bus_Posting_Group" => "DOMESTIC",
+        //     "Customer_Posting_Group" => "DOMESTIC",
+        //     // 'country' => 'UK',
+        //     'Post_Code' => $request->postcode,
+        //     // "Location_Code" =>  $warehouse->name,
 
-            'Salesperson_Code' => $salespersonCode,
-            "Responsibility_Center" => $resposibilityCenter,
-            "Customer_Price_Group" =>  $customerPriceGroup
+        //     // 'Salesperson_Code' => $salespersonCode,
+        //     // "Responsibility_Center" => $resposibilityCenter,
+        //     // "Customer_Price_Group" =>  $customerPriceGroup
 
-        ];
-        // dd($customer->id.' This is branch'.$branch->id);
-        DB::commit();
-        \Log::info('this is customer object', [$customers]);
-        dispatch(new DynamicsCreateUser($customers,$customer->id,$branch->id));
-        dispatch(new VerificationEmail($user));
+        // ];
+        // // dd($customer->id.' This is branch'.$branch->id);
+        // DB::commit();
+        // \Log::info('this is customer object', [$customers]);
+        // dispatch(new DynamicsCreateUser($customers,$customer->id,$branch->id));
+        // dispatch(new VerificationEmail($user));
     
 
         return redirect()->route('verification.notice')->with('success','Customer Registered Successfully.')->with(['id' => $user->id]);

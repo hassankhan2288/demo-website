@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Cater-Choice || Promotion Page')
+@section('title','Demo || Click & Collect')
 @section('main-content')
  
 
@@ -27,7 +27,7 @@
 
     <!-- Brand start -->
     <section class="overlay_class py-[60px] relative before:absolute before:inset-0 before:content-[''] before:bg-[#706233]/20 before:z-[1] group">
-      <img src="{{image_url('storage/red-bg.jpg')}}" class="w-full h-full object-cover absolute inset-0">
+      {{-- <img src="{{image_url('storage/red-bg.jpg')}}" class="w-full h-full object-cover absolute inset-0"> --}}
       <div class="!container !px-6 mx-auto relative z-[2]">
        <div class="custom_add_cart">
         <div class="relative">

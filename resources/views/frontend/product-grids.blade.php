@@ -1,6 +1,6 @@
 @extends('frontend.layouts.master')
 
-@section('title', 'Cater-Choice || PRODUCT PAGE')
+@section('title', 'Demo || PRODUCT PAGE')
 <?php
 //if (isset(session()->get('design'))) {
 session()->get('design');

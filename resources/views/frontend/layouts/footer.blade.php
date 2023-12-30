@@ -138,9 +138,9 @@
 	</footer>
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  {{-- <a href="#" class="scroll-top flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> --}}
 
-  <div id="preloader"></div>
+  {{-- <div id="preloader"></div> --}}
 
   <!-- Vendor JS Files -->
 

@@ -32,10 +32,12 @@ class HomeController extends Controller
       //  $category_all = Category::where('is_active', true)->with('producthome')->limit(5)->get();
       //  $product_all = Product::where('is_active', true)->limit(9)->get();
         $brand_all = Brand::where('is_active', true)->get();
+        $category_all = Category::where('is_active', true)->with('producthome')->limit(8)->get();
+        $product_all = Product::where('is_active', true)->limit(5)->get();
 
     
         //dd($category_all);
-        return view('frontend.home',compact('slider','brand_all','mobile_slider'));
+        return view('frontend.home',compact('slider','brand_all','mobile_slider','category_all','product_all'));
     }
 
     public function promotion(){
@@ -55,6 +57,10 @@ class HomeController extends Controller
     public function careers(){
 
         return view('frontend.careers');
+    }
+    public function gallery(){
+
+        return view('frontend.gallery');
     }
     public function click(){
 

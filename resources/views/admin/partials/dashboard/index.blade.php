@@ -196,8 +196,8 @@
                                                 <td>{{ $product->code }}</td>
                                                 <td>{{ $product->qty }}</td>
                                                 <td>{{ $product->price }}</td>
-                                                <td>{{ $sellers->delivery_pack }}</td>
-                                                <td>{{ $sellers->delivery_single }}</td>
+                                                <td>{{ $product->delivery_pack }}</td>
+                                                <td>{{ $product->delivery_single }}</td>
                                                 <td>{{ $product->count }}</td>
                                             </tr>
                                         @endforeach
@@ -361,8 +361,8 @@
                                                 <td>{{ $product->code }}</td>
                                                 <td>{{ $product->qty }}</td>
                                                 <td>{{ $product->price }}</td>
-                                                <td>{{ $sellers->delivery_pack }}</td>
-                                                <td>{{ $sellers->delivery_single }}</td>
+                                                <td>{{ $product->delivery_pack }}</td>
+                                                <td>{{ $product->delivery_single }}</td>
                                                 <td>{{ $product->count }}</td>
                                             </tr>
                                         @endforeach

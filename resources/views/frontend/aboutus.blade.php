@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Cater-Choice || Promotion Page')
+@section('title','DEMO || About Us')
 @section('main-content')
 
   <main id="main">
@@ -7,27 +7,36 @@
       <div class="!container mx-auto px-6 pb-[40px]">
         <div class="flex items-center">
             <div class="md:w-full">
-                <img src="{{asset('frontend/img/aboutus.jpg')}}" style="width:100%">
+                <img src="{{asset('images/about.jpg')}}" style="width:100%">
             </div>
-        </div>
-        <div class="flex items-center pt-[40px]">
+          </div>
+          <div class="flex items-center pt-[40px]">
             <div class="md:w-full">
-              <h1 class="text-[26px] font-semibold">OUR COMPANY</h1><br>
-              <p class="text-justify">Cater Choice is a well-established company (part of the ICS UK Ltd group), specialising in the distribution of catering products and packaging to the foodservice and hospitality industries. Our Cash & Carry sites and distribution centres are located in the geographical heart of the United Kingdom; thus allowing easy access of our range of ambient, frozen and refrigerated products, to thousands of customers.</p>
-              <br>
-              <p class="text-justify">Cater Choice are committed to selling a high quality range of own label products, as well as selected national and private label products for the catering services sector. Built through years of experience; our extensive knowledge of the catering market has helped us build a tried and tested portfolio of products, which trade under the <i><b>Prima, Al Ameen, Easi Pak, Mount Prima, My Flavourite Chicken, Texas Ranger and Manhattan</b></i> labels. </p>
-              <br>
-              <p class="text-justify">To achieve this, we have sourced extensively throughout the world and our buyers personally travel to the various countries of origin; and routinely place contracts for supply for the season. This allows us to ensure we have full control over quality and price competitiveness. The mixture of own label and other branded names, ensures choice for diverse caterers with differing markets and price points. </p>
+              <h1 class="text-[26px] font-semibold">WHO ARE WE?</h1><br>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat provident nobis repudiandae minima nisi iure. Eveniet corporis facere dignissimos? A eius ipsam ab blanditiis cum ratione laboriosam temporibus hic?</p> 
+            </div>
+          </div>
+          <div class="md:w-full mt-3">
+              <img src="{{asset('images/about.jpg')}}" style="width:100%">
+          </div>
+        <br>
+        <div class="flex items-center">
+          <div class="md:w-full">
+            <h1 class="text-[26px] font-semibold mt-3">ABOUT OUR COMPANY</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati provident ipsum voluptatum ex voluptatem beatae dolores quisquam impedit? Enim officiis ex placeat minima voluptates pariatur possimus assumenda id quam. Magnam?</p> 
           </div>
         </div>
-        <br>
-        {{-- <div class="flex items-center">
-          <div class="md:w-full">
-            <p class="text-justify">At Cater Choice, we understand the logistical and financial pressures faced by commercial kitchens. Helping our customers meet these challenges, is at the heart of everything we do; and is reflected in our product range and pricing structure, as well as the strength of relationships with both suppliers and customers.</p>
-            <br>
-            <p class="text-justify"><b>‘We truly believe that strong relationships with both suppliers and customers, are the key to success and longevity in the business world. Developing these mutually beneficial relationships has helped us grow as a company, and allowed us to acquire our reputation for quality products with competitive pricing.’ Ismail Bhamji (Director)</p>
+          <div class="md:w-full mt-3">
+              <img src="{{asset('banners/sky.jpg')}}" style="width:100%">
           </div>
-        </div> --}}
+        <br>
+        <div class="flex items-center">
+          <div class="md:w-full">
+            <h1 class="text-[26px] font-semibold mt-3">QUANTITY AND SERVICE</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque optio, hic quis et eum, quisquam ipsam consequatur maiores doloribus eius ab fuga repudiandae rerum sed at recusandae cum dolores!</p> 
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In architecto, dolor libero ut, maxime laudantium consectetur omnis magnam nam mollitia amet exercitationem placeat, voluptatem possimus provident corrupti voluptate? Exercitationem, ea!</p> 
+          </div>
+        </div>
       </div>
     </section>
   </main>

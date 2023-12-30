@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title','Cater-Choice || Register Page')
+@section('title','Demo || Register Page')
 @section('main-content')
 {{-- <script src="https://cdn.getaddress.io/scripts/getaddress-location-1.0.0.min.js"></script> --}}
 <script src="https://cdn.getaddress.io/scripts/getaddress-autocomplete-1.0.24.min.js"></script>
@@ -43,7 +43,7 @@
 
                <form method="POST" action="{{ route('customer.post.register') }}" enctype="multipart/form-data">
                     @csrf
-                    <div class="mb-[20px]">
+                    {{-- <div class="mb-[20px]">
                         <div class="avatar-upload">
                             <div class="avatar-edit">
                                 <input name="profile_image" type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
@@ -54,7 +54,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="mb-[20px]">
                         <input id="name" type="text" placeholder="Name" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                         @error('name')
@@ -73,7 +73,7 @@
                         @enderror
                     </div>
 
-                    <div class="mb-[20px]">
+                    {{-- <div class="mb-[20px]">
                         <input id="business_name" type="text" placeholder="Business Name" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('business_name') is-invalid @enderror" name="business_name" value="{{ old('business_name') }}" required>
 
                         @error('business_name')
@@ -81,8 +81,8 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                    </div>
-                    <div class="mb-[20px]">
+                    </div> --}}
+                    {{-- <div class="mb-[20px]">
                         <select name="business_type" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 " required placeholder="Business Type">
                             <option selected="" disabled="" hidden="" value="">Select a business type</option>
                             <optgroup label="Business">
@@ -133,7 +133,7 @@
                                  <strong>{{ $message }}</strong>
                              </span>
                          @enderror
-                    </div>
+                    </div> --}}
 
                     <div class="mb-[20px]">
                         <input id="postcode" type="text" placeholder="Postcode" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('postcode') is-invalid @enderror" name="postcode" value="{{ old('postcode') }}" required autocomplete="Postcode">
@@ -176,7 +176,7 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="mb-[20px]">
+                    {{-- <div class="mb-[20px]">
                         <label for="warehouse">{{ __('Location') }}</label>
                         <select name="warehouse" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('warehouse') is-invalid @enderror" required>
                             <option value="">Select Location</option>
@@ -186,7 +186,6 @@
                                 @else
                                 <option value="{{ $warehouses->id }}">{{$warehouses->title}}</option>
                                 @endif
-                                {{-- <option value="{{$warehouses->id}}">{{$warehouses->title}}</option> --}}
                             @endforeach
                         </select>
                         @error('warehouse')
@@ -194,9 +193,9 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                    </div>
+                    </div> --}}
 
-                    <div class="mb-[20px]">
+                    {{-- <div class="mb-[20px]">
                         <label for="checkout_preference">{{ __('Checkout Preference') }}</label>
                         <select name="checkout_preference" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('checkout_preference') is-invalid @enderror" required>
                             <option value="">Select Checkout Preference</option>
@@ -208,10 +207,10 @@
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                    </div>
+                    </div> --}}
                     <div class="mb-[20px]">
                         <input id="password" type="password" placeholder="Password" class="p-[8px_15px] rounded-[4px] !border !border-[#706233]/10 w-full focus:border-[#706233]/30 focus-visible:!border-[#706233]/30 focus-visible:outline-0 @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-                        <small>Password must be atleast 8 characters with 1 uppercase & Symbol value.</small>
+                        <small>Password must be atleast 8 characters.</small>
                         @error('password')
                             <span class="text-red" role="alert">
                                 <strong>{{ $message }}</strong>

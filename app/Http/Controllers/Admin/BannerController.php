@@ -57,15 +57,21 @@ class BannerController extends Controller
         $this->validate($request,[
             'title'=>'string|required|max:50',
             'description'=>'string|nullable',
+            'link'=>'string|required',
             'photo'=>'required|image|mimes:jpeg,jpg,png,gif',
             'status'=>'required|in:active,inactive',
             'type' => 'required|in:website,mobile'
         ]);
         $data=$request->all();
         $photo = $request->photo;
-        
         if ($photo) {
-            $data['photo'] = \Helper::upload_S3_image($photo,'public/banners/','storage/banners/');
+            $photoName = $photo->getClientOriginalName();
+            $photo->move('public/banners/', $photoName);
+            $data['photo'] = $photoName;
+        }
+        
+        // if ($photo) {
+        //     $data['photo'] = \Helper::upload_S3_image($photo,'public/banners/','storage/banners/');
             // $extension      = $photo->getClientOriginalExtension();
             // $imageName      = $photo->getClientOriginalName();
             // $imageName      = str_replace(' ', '_', $imageName);
@@ -84,7 +90,7 @@ class BannerController extends Controller
             //     $data['photo'] = 'storage/banners/'.$imageUrl;
             //     unlink($urlImage);
             // }
-        }
+        // }
 
         $slug=Str::slug($request->title);
         $count=Banner::where('slug',$slug)->count();

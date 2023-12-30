@@ -235,7 +235,7 @@
         <nav>
             <ul class="flex flex-wrap items-center h-full">
                 <li class="group relative flex items-center">
-                    <span class="text-[15px] text-bold text-black inline-flex items-center p-[11px_20px] my-[8px] mr-[15px] bg-[#f3b3b3] rounded-full cursor-pointer">
+                    <span class="text-[15px] text-bold text-black inline-flex items-center p-[11px_20px] my-[8px] mr-[15px] bg-[#E1C78F] rounded-full cursor-pointer">
                         <i class="fa fa-bars text-[18px] mr-2" aria-hidden="true"></i>
                         <span class="font-semibold">Browse Categories</span>
                         <i class="fa fa-angle-down ml-2 text-[22px]" aria-hidden="true"></i>
@@ -275,6 +275,8 @@
                 <li class="flex items-center"><a href="{{route('contact')}}" class="text-[15px] font-semibold text-white inline-block px-[15px]">Contact Us</a></li>
                 {{-- <li class="flex items-center"><a href="{{route('careers')}}" class="text-[15px] font-semibold text-white inline-block px-[15px]">Careers</a></li> --}}
                 <li class="flex items-center"><a href="{{route('click')}}" class="text-[15px] font-semibold text-white inline-block px-[15px]">Click & Collect</a></li>
+                <li class="flex items-center"><a href="{{route('gallery')}}" class="text-[15px] font-semibold text-white inline-block px-[15px]">Gallery</a></li>
+
             </ul>
         </nav>
     </div>

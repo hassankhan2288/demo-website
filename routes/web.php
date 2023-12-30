@@ -41,6 +41,7 @@ Route::get('/promotions','Front\FrontendController@productPromotionsGrids')->nam
 Route::get('/aboutus','Front\HomeController@aboutus')->name('aboutus');
 Route::get('/contact','Front\HomeController@contact')->name('contact');
 Route::get('/careers','Front\HomeController@careers')->name('careers');
+Route::get('/gallery','Front\HomeController@gallery')->name('gallery');
 //Route::get('/products','Front\HomeController@products');
 Route::get('/click-collect','Front\HomeController@click')->name('click');
 Route::get('/products','Front\FrontendController@productGrids')->name('product-grids');
